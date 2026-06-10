@@ -1,39 +1,39 @@
-ID,Nom,Prénom,Statut,Grade,CIS,Dernière visite,Prochaine visite,Avis médical,Restriction,Observation,Pré-visite,Bilan à faire,Dernière mise à jour,Source de mise à jour
-1,ABENAQUI,Cédric,SPV,,CIS Bouillante,,2026-04-14,NON A JOUR,,,NON,NON,,Fichier initial
-2,ASDRUBAL,Eric,SPV,,CIS Bouillante,,2025-10-07,NON A JOUR,,,NON,NON,,Fichier initial
-3,ASDRUBAL,Fabrice,SPP,,CIS Bouillante,,2025-09-22,NON A JOUR,,,NON,NON,,Fichier initial
-4,BALTUS,Lydia,SPV,,CIS Bouillante,,2026-02-28,NON A JOUR,,,NON,NON,,Fichier initial
-5,BALTUS,Franck,SPV,,CIS Bouillante,,2025-12-15,NON A JOUR,,,NON,NON,,Fichier initial
-6,BAPTISTE,Bruce,SPV,,CIS Bouillante,,2026-06-28,EXPIRE BIENTOT,,,NON,NON,,Fichier initial
-7,BENJAMIN,Judith,SPP,,CIS Bouillante,,2024-12-02,NON A JOUR,,BILAN A FAIRE,NON,OUI,,Fichier initial
-8,BOISDUR,Harry,SPV,,CIS Bouillante,,2026-09-23,A JOUR,,,NON,NON,,Fichier initial
-9,CAFFA,Olivier,SPV,,CIS Bouillante,,2024-07-16,NON A JOUR,,RDV pré-visite  à PRENDRE,OUI,NON,,Fichier initial
-10,CLARKE,Jean-claude,SPV,,CIS Bouillante,,2026-02-25,NON A JOUR,,,NON,NON,,Fichier initial
-11,DABRIOU,Bethy,SPV,,CIS Bouillante,,2025-08-31,NON A JOUR,,RDV pré-visite  à PRENDRE,OUI,NON,,Fichier initial
-12,DAMBURY,Cyrille,SPV,,CIS Bouillante,,2025-05-26,NON A JOUR,,RDV pré-visite  à PRENDRE,OUI,NON,,Fichier initial
-13,DARLIS,Marie-Odile,SPV,,CIS Bouillante,,2025-07-12,NON A JOUR,,RDV pré-visite  à PRENDRE,OUI,NON,,Fichier initial
-14,ELIEN,Jeannick,SPV,,CIS Bouillante,,2024-06-27,NON A JOUR,,Visite du 09/10/2024 absent RDV pré-visite  à PRENDRE,OUI,NON,,Fichier initial
-15,ELISABETH,Philippe,SPV,,CIS Bouillante,,2026-01-17,NON A JOUR,,,NON,NON,,Fichier initial
-16,ELMACIN,Adam,SPV,,CIS Bouillante,,2025-06-09,NON A JOUR,,BILAN A FAIRE,NON,OUI,,Fichier initial
-17,ENGOULEVENT,Leiny,SPV,,CIS Bouillante,,2026-02-23,NON A JOUR,,,NON,NON,,Fichier initial
-18,FELIX,Ruddy,SPV,,CIS Bouillante,,2026-06-16,EXPIRE BIENTOT,,,NON,NON,,Fichier initial
-19,FEUILLARD,Stéphane,SPV,,CIS Bouillante,,2025-07-14,NON A JOUR,,RDV pré-visite  30/06,OUI,NON,,Fichier initial
-20,FICADIERE,Josette,SPV,,CIS Bouillante,,2026-04-22,NON A JOUR,,,NON,NON,,Fichier initial
-21,FIRPION,Ludjy,SPV,,CIS Bouillante,,2026-11-30,A JOUR,,,NON,NON,,Fichier initial
-22,GUERET,Ludger,SPV,,CIS Bouillante,,2025-12-31,NON A JOUR,,,NON,NON,,Fichier initial
-23,GUILLAUME,William,SPV,,CIS Bouillante,,2026-02-10,NON A JOUR,,,NON,NON,,Fichier initial
-24,HATIL,Thierry,SPV,,CIS Bouillante,,2026-01-17,NON A JOUR,,,NON,NON,,Fichier initial
-25,LABIRIN,Cécilia,SPV,,CIS Bouillante,,2025-04-30,NON A JOUR,,RDV pré-visite  à PRENDRE,OUI,NON,,Fichier initial
-26,HATIL,Ruben,SPV,,CIS Bouillante,,2025-12-01,NON A JOUR,,,NON,NON,,Fichier initial
-27,LANCASTRE,Bruno,SPP,,CIS Bouillante,,2026-02-10,NON A JOUR,,,NON,NON,,Fichier initial
-28,LAURENT,Miguel,SPV,,CIS Bouillante,,2026-06-22,EXPIRE BIENTOT,,,NON,NON,,Fichier initial
-29,LEGRAVE,Didier,SPV,,CIS Bouillante,,2026-01-13,NON A JOUR,,,NON,NON,,Fichier initial
-30,LUCE,Précilla,SPV,,CIS Bouillante,,2027-07-20,A JOUR,,,NON,NON,,Fichier initial
-31,LOISEAU,Fred,SPP,,CIS Bouillante,,2026-03-23,NON A JOUR,,,NON,NON,,Fichier initial
-32,MACIN,Adriana,SPV,,CIS Bouillante,,2025-07-21,NON A JOUR,,RDV pré-visite  30/06,OUI,NON,,Fichier initial
-33,MICOLON,Jérome,SPV,,CIS Bouillante,,2025-07-31,NON A JOUR,,RDV PREVISITE A PRENDRE,OUI,NON,,Fichier initial
-34,MONTOUT,Sindy,SPV,,CIS Bouillante,,2025-10-30,NON A JOUR,,,NON,NON,,Fichier initial
-35,PALMYRE,Dylan,SPV,,CIS Bouillante,,2026-01-13,NON A JOUR,,,NON,NON,,Fichier initial
-36,RACON,Sonel,SPV,,CIS Bouillante,,2025-03-03,NON A JOUR,,RDV pré-visite  à PRENDRE,OUI,NON,,Fichier initial
-37,SAINT-JULIEN,Landry,SPV,,CIS Bouillante,,2025-07-31,NON A JOUR,,RDV pré-visite  à PRENDRE,OUI,NON,,Fichier initial
-38,SAINT-PHOR,Thierry,SPP,,CIS Bouillante,,2026-04-14,NON A JOUR,,,NON,NON,,Fichier initial
+﻿ID,Nom,Prénom,Matricule,Statut,Grade,CIS,Dernière visite,Prochaine visite,Type visite,Avis médical,Restriction,Restriction opérationnelle,Inaptitude,Type inaptitude,Début inaptitude,Fin inaptitude,Activités sportives,Observation,Pré-visite,Bilan à faire,Dernière mise à jour,Source,Document
+1,ABENAQUI,Cédric,22 303,SPV,,CIS Bouillante,2025-04-10,2026-04-14,Maintien en activité,Apte sans restriction,Aucune,Non,Non,,,,Autorisées,"Certificat reçu : apte sans restriction, valable jusqu’au 14/04/2026. Statut recalculé automatiquement : expiré si date dépassée.",Non,Non,2026-06-10,PDF aptitude ABENAQUI Cédric,ABENAQUI Cédric.pdf
+2,ASDRUBAL,Eric,,SPV,,CIS Bouillante,,2025-10-07,,NON A JOUR,,,Non,,,,,,Non,Non,,Base Excel,
+3,ASDRUBAL,Fabrice,,SPP,,CIS Bouillante,,2025-09-22,,NON A JOUR,,,Non,,,,,,Non,Non,,Base Excel,
+4,BALTUS,Lydia,,SPV,,CIS Bouillante,,2026-02-28,,NON A JOUR,,,Non,,,,,,Non,Non,,Base Excel,
+5,BALTUS,Franck,,SPV,,CIS Bouillante,,2025-12-15,,NON A JOUR,,,Non,,,,,,Non,Non,,Base Excel,
+6,BAPTISTE,Bruce,,SPV,,CIS Bouillante,,2026-06-28,,EXPIRE BIENTOT,,,Non,,,,,,Non,Non,,Base Excel,
+7,BENJAMIN,Judith,,SPP,,CIS Bouillante,,2024-12-02,,NON A JOUR,,,Non,,,,,BILAN A FAIRE,Non,Oui,,Base Excel,
+8,BOISDUR,Harry,,SPV,,CIS Bouillante,,2026-09-23,,A JOUR,,,Non,,,,,,Non,Non,,Base Excel,
+9,CAFFA,Olivier,,SPV,,CIS Bouillante,,2024-07-16,,NON A JOUR,,,Non,,,,,RDV pré-visite  à PRENDRE,Oui,Non,,Base Excel,
+10,CLARKE,Jean-claude,,SPV,,CIS Bouillante,,2026-02-25,,NON A JOUR,,,Non,,,,,,Non,Non,,Base Excel,
+11,DABRIOU,Bethy,,SPV,,CIS Bouillante,,2025-08-31,,NON A JOUR,,,Non,,,,,RDV pré-visite  à PRENDRE,Oui,Non,,Base Excel,
+12,DAMBURY,Cyrille,,SPV,,CIS Bouillante,,2025-05-26,,NON A JOUR,,,Non,,,,,RDV pré-visite  à PRENDRE,Oui,Non,,Base Excel,
+13,DARLIS,Marie-Odile,,SPV,,CIS Bouillante,,2025-07-12,,NON A JOUR,,,Non,,,,,RDV pré-visite  à PRENDRE,Oui,Non,,Base Excel,
+14,ELIEN,Jeannick,,SPV,,CIS Bouillante,,2024-06-27,,NON A JOUR,,,Non,,,,,Visite du 09/10/2024 absent RDV pré-visite  à PRENDRE,Oui,Non,,Base Excel,
+15,ELISABETH,Philippe,,SPV,,CIS Bouillante,,2026-01-17,,NON A JOUR,,,Non,,,,,,Non,Non,,Base Excel,
+16,ELMACIN,Adam,,SPV,,CIS Bouillante,,2025-06-09,,NON A JOUR,,,Non,,,,,BILAN A FAIRE,Non,Oui,,Base Excel,
+17,ENGOULEVENT,Leiny,,SPV,,CIS Bouillante,,2026-02-23,,NON A JOUR,,,Non,,,,,,Non,Non,,Base Excel,
+18,FELIX,Ruddy,,SPV,,CIS Bouillante,,2026-06-16,,EXPIRE BIENTOT,,,Non,,,,,,Non,Non,,Base Excel,
+19,FEUILLARD,Stéphane,,SPV,,CIS Bouillante,,2025-07-14,,NON A JOUR,,,Non,,,,,RDV pré-visite  30/06,Oui,Non,,Base Excel,
+20,FICADIERE,Josette,,SPV,,CIS Bouillante,,2026-04-22,,NON A JOUR,,,Non,,,,,,Non,Non,,Base Excel,
+21,FIRPION,Ludjy,,SPV,,CIS Bouillante,,2026-11-30,,A JOUR,,,Non,,,,,,Non,Non,,Base Excel,
+22,GUERET,Ludger,,SPV,,CIS Bouillante,,2025-12-31,,NON A JOUR,,,Non,,,,,,Non,Non,,Base Excel,
+23,GUILLAUME,William,,SPV,,CIS Bouillante,,2026-02-10,,NON A JOUR,,,Non,,,,,,Non,Non,,Base Excel,
+24,HATIL,Thierry,,SPV,,CIS Bouillante,,2026-01-17,,NON A JOUR,,,Non,,,,,,Non,Non,,Base Excel,
+25,LABIRIN,Cécilia,,SPV,,CIS Bouillante,,2025-04-30,,NON A JOUR,,,Non,,,,,RDV pré-visite  à PRENDRE,Oui,Non,,Base Excel,
+26,HATIL,Ruben,,SPV,,CIS Bouillante,,2025-12-01,,NON A JOUR,,,Non,,,,,,Non,Non,,Base Excel,
+27,LANCASTRE,Bruno,,SPP,,CIS Bouillante,,2026-02-10,,NON A JOUR,,,Non,,,,,,Non,Non,,Base Excel,
+28,LAURENT,Miguel,,SPV,,CIS Bouillante,,2026-06-22,,EXPIRE BIENTOT,,,Non,,,,,,Non,Non,,Base Excel,
+29,LEGRAVE,Didier,,SPV,,CIS Bouillante,,2026-01-13,,NON A JOUR,,,Non,,,,,,Non,Non,,Base Excel,
+30,LUCE,Précilla,,SPV,,CIS Bouillante,,2027-07-20,,A JOUR,,,Non,,,,,,Non,Non,,Base Excel,
+31,LOISEAU,Fred,,SPP,,CIS Bouillante,,2026-03-23,,NON A JOUR,,,Non,,,,,,Non,Non,,Base Excel,
+32,MACIN,Adriana,,SPV,,CIS Bouillante,,2025-07-21,,NON A JOUR,,,Non,,,,,RDV pré-visite  30/06,Oui,Non,,Base Excel,
+33,MICOLON,Jérome,,SPV,,CIS Bouillante,,2025-07-31,,NON A JOUR,,,Non,,,,,RDV PREVISITE A PRENDRE,Oui,Non,,Base Excel,
+34,MONTOUT,Sindy,,SPV,,CIS Bouillante,,2025-10-30,,NON A JOUR,,,Non,,,,,,Non,Non,,Base Excel,
+35,PALMYRE,Dylan,,SPV,,CIS Bouillante,,2026-01-13,,NON A JOUR,,,Non,,,,,,Non,Non,,Base Excel,
+36,RACON,Sonel,,SPV,,CIS Bouillante,,2025-03-03,,NON A JOUR,,,Non,,,,,RDV pré-visite  à PRENDRE,Oui,Non,,Base Excel,
+37,SAINT-JULIEN,Landry,,SPV,,CIS Bouillante,,2025-07-31,,NON A JOUR,,,Non,,,,,RDV pré-visite  à PRENDRE,Oui,Non,,Base Excel,
+38,SAINT-PHOR,Thierry,,SPP,,CIS Bouillante,,2026-04-14,,NON A JOUR,,,Non,,,,,,Non,Non,,Base Excel,

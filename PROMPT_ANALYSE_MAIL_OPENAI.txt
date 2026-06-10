@@ -1,22 +1,23 @@
-Tu analyses un mail de suivi de visite médicale pour le CIS Bouillante.
-Retourne uniquement un JSON valide, sans commentaire, avec les champs :
+Tu analyses un mail ou un certificat médical d’aptitude SDIS.
+Tu dois extraire uniquement les agents du CIS BOUILLANTE.
+Si le CIS/Service ne contient pas BOUILLANTE, retourne: {"ignorer": true, "raison": "Agent non Bouillante"}.
+Ne jamais extraire de diagnostic médical. Extraire seulement les informations administratives utiles au service.
+
+Réponds uniquement en JSON avec ces champs:
 {
+  "ignorer": false,
   "nom": "",
   "prenom": "",
-  "statut": "SPV ou SPP si présent sinon vide",
-  "date_derniere_visite": "YYYY-MM-DD ou vide",
-  "date_prochaine_visite": "YYYY-MM-DD ou vide",
-  "avis_medical": "Apte | Apte avec restrictions | Inapte temporaire | Inapte définitif | Non à jour | En attente",
-  "restriction": "texte court ou vide",
-  "observation": "texte court ou vide",
-  "bilan_a_faire": "OUI ou NON",
-  "previsite": "OUI ou NON"
+  "matricule": "",
+  "cis": "CIS Bouillante",
+  "date_certificat": "AAAA-MM-JJ",
+  "type_visite": "Maintien en activité / Recrutement / Reprise / Pré-reprise / Autre",
+  "avis_medical": "Apte sans restriction / Apte avec restrictions / Inapte temporaire / Inapte définitif / Non à jour",
+  "inaptitude": "Oui / Non",
+  "type_inaptitude": "Temporaire / Définitive / Partielle / SHR non opérationnel /",
+  "restriction_operationnelle": "Non / Incendie-Port ARI / Secours à personne / SR / Activités de nuit / Conduite tous engins / Autre",
+  "restriction_detail": "",
+  "activites_sportives": "Autorisées / Autorisées y compris compétition / Contre-indiquées /",
+  "valable_jusquau": "AAAA-MM-JJ",
+  "source": "mail ou PDF"
 }
-Règles :
-- Ne jamais inventer de date.
-- Si plusieurs dates sont présentes, la date de visite est souvent la première, la prochaine visite souvent la dernière.
-- Ne pas reprendre d'informations médicales intimes ; garder seulement l'information utile à l'aptitude opérationnelle.
-- Normaliser les dates au format YYYY-MM-DD.
-
-MAIL À ANALYSER :
-{{body}}
