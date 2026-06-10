@@ -1,29 +1,15 @@
 {
-  "name": "Mise à jour aptitudes médicales depuis Gmail",
+  "version": "V7 finale",
+  "objectif": "Lire les mails/PDF reçus, conserver uniquement CIS BOUILLANTE, mettre à jour Google Sheet privé.",
   "steps": [
-    {
-      "module": "Gmail - Watch emails",
-      "query": "(aptitude médicale OR visite médicale OR inaptitude OR restriction) -label:Traité-visite-médicale"
-    },
-    {
-      "module": "OpenAI - Analyse du mail",
-      "prompt_file": "PROMPT_ANALYSE_MAIL_OPENAI.txt"
-    },
-    {
-      "module": "JSON - Parse JSON",
-      "output": "nom, prenom, date_derniere_visite, date_prochaine_visite, avis_medical, restriction, observation, bilan_a_faire, previsite"
-    },
-    {
-      "module": "Google Sheets - Search Rows",
-      "match": "Nom + Prénom"
-    },
-    {
-      "module": "Google Sheets - Update Row",
-      "sheet": "google_sheet_base.csv importé dans Google Sheet"
-    },
-    {
-      "module": "Gmail - Add label",
-      "label": "Traité visite médicale"
-    }
+    "Gmail Watch emails",
+    "Download attachments",
+    "OCR/PDF text extraction",
+    "OpenAI extraction with prompt",
+    "Filter CIS contains BOUILLANTE",
+    "Find row in Google Sheet by nom+prenom or matricule",
+    "Update row and append historique",
+    "Archive PDF in Drive",
+    "Notify user"
   ]
 }

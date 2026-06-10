@@ -1,4 +1,2 @@
-window.APP_CONFIG = {
-  // Option automatique : coller ici l'URL CSV publiée du Google Sheet.
-  DATA_URL: ""
-};
+// Version 7 finale - connexion future Google Sheet / Make
+window.APP_CONFIG = { remoteJsonUrl: '' };

@@ -1,0 +1,9 @@
+VERSION V7 FINALE - VISITE MEDICALE & COMPETENCE
+
+Nouveautés : tableau de bord amélioré, onglet alertes, onglet inaptitudes/restrictions complet, historique par agent, exports CSV/JSON/PDF, analyse mail, préparation import certificat PDF, tri automatique par priorité, base Bouillante uniquement, sans mot de passe.
+
+Installation GitHub :
+1. Décompresser le ZIP.
+2. Envoyer tous les fichiers à la racine du dépôt GitHub.
+3. Commit changes.
+4. Ouvrir https://caboua.github.io/visite-medicale-competence/?reset=1&v=7
