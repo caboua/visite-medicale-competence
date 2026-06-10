@@ -8,7 +8,14 @@
     "aptitude": "NON A JOUR",
     "observations": "",
     "bilanAFaire": false,
-    "previsite": false
+    "previsite": false,
+    "grade": "",
+    "cis": "CIS Bouillante",
+    "derniereVisite": "",
+    "restriction": "",
+    "telephone": "",
+    "email": "",
+    "historique": []
   },
   {
     "id": 2,
@@ -19,7 +26,14 @@
     "aptitude": "NON A JOUR",
     "observations": "",
     "bilanAFaire": false,
-    "previsite": false
+    "previsite": false,
+    "grade": "",
+    "cis": "CIS Bouillante",
+    "derniereVisite": "",
+    "restriction": "",
+    "telephone": "",
+    "email": "",
+    "historique": []
   },
   {
     "id": 3,
@@ -30,7 +44,14 @@
     "aptitude": "NON A JOUR",
     "observations": "",
     "bilanAFaire": false,
-    "previsite": false
+    "previsite": false,
+    "grade": "",
+    "cis": "CIS Bouillante",
+    "derniereVisite": "",
+    "restriction": "",
+    "telephone": "",
+    "email": "",
+    "historique": []
   },
   {
     "id": 4,
@@ -41,7 +62,14 @@
     "aptitude": "NON A JOUR",
     "observations": "",
     "bilanAFaire": false,
-    "previsite": false
+    "previsite": false,
+    "grade": "",
+    "cis": "CIS Bouillante",
+    "derniereVisite": "",
+    "restriction": "",
+    "telephone": "",
+    "email": "",
+    "historique": []
   },
   {
     "id": 5,
@@ -52,7 +80,14 @@
     "aptitude": "NON A JOUR",
     "observations": "",
     "bilanAFaire": false,
-    "previsite": false
+    "previsite": false,
+    "grade": "",
+    "cis": "CIS Bouillante",
+    "derniereVisite": "",
+    "restriction": "",
+    "telephone": "",
+    "email": "",
+    "historique": []
   },
   {
     "id": 6,
@@ -63,7 +98,14 @@
     "aptitude": "EXPIRE BIENTOT",
     "observations": "",
     "bilanAFaire": false,
-    "previsite": false
+    "previsite": false,
+    "grade": "",
+    "cis": "CIS Bouillante",
+    "derniereVisite": "",
+    "restriction": "",
+    "telephone": "",
+    "email": "",
+    "historique": []
   },
   {
     "id": 7,
@@ -74,7 +116,14 @@
     "aptitude": "NON A JOUR",
     "observations": "BILAN A FAIRE",
     "bilanAFaire": true,
-    "previsite": false
+    "previsite": false,
+    "grade": "",
+    "cis": "CIS Bouillante",
+    "derniereVisite": "",
+    "restriction": "",
+    "telephone": "",
+    "email": "",
+    "historique": []
   },
   {
     "id": 8,
@@ -85,7 +134,14 @@
     "aptitude": "A JOUR",
     "observations": "",
     "bilanAFaire": false,
-    "previsite": false
+    "previsite": false,
+    "grade": "",
+    "cis": "CIS Bouillante",
+    "derniereVisite": "",
+    "restriction": "",
+    "telephone": "",
+    "email": "",
+    "historique": []
   },
   {
     "id": 9,
@@ -96,7 +152,14 @@
     "aptitude": "NON A JOUR",
     "observations": "RDV pré-visite  à PRENDRE",
     "bilanAFaire": false,
-    "previsite": true
+    "previsite": true,
+    "grade": "",
+    "cis": "CIS Bouillante",
+    "derniereVisite": "",
+    "restriction": "",
+    "telephone": "",
+    "email": "",
+    "historique": []
   },
   {
     "id": 10,
@@ -107,7 +170,14 @@
     "aptitude": "NON A JOUR",
     "observations": "",
     "bilanAFaire": false,
-    "previsite": false
+    "previsite": false,
+    "grade": "",
+    "cis": "CIS Bouillante",
+    "derniereVisite": "",
+    "restriction": "",
+    "telephone": "",
+    "email": "",
+    "historique": []
   },
   {
     "id": 11,
@@ -118,7 +188,14 @@
     "aptitude": "NON A JOUR",
     "observations": "RDV pré-visite  à PRENDRE",
     "bilanAFaire": false,
-    "previsite": true
+    "previsite": true,
+    "grade": "",
+    "cis": "CIS Bouillante",
+    "derniereVisite": "",
+    "restriction": "",
+    "telephone": "",
+    "email": "",
+    "historique": []
   },
   {
     "id": 12,
@@ -129,7 +206,14 @@
     "aptitude": "NON A JOUR",
     "observations": "RDV pré-visite  à PRENDRE",
     "bilanAFaire": false,
-    "previsite": true
+    "previsite": true,
+    "grade": "",
+    "cis": "CIS Bouillante",
+    "derniereVisite": "",
+    "restriction": "",
+    "telephone": "",
+    "email": "",
+    "historique": []
   },
   {
     "id": 13,
@@ -140,7 +224,14 @@
     "aptitude": "NON A JOUR",
     "observations": "RDV pré-visite  à PRENDRE",
     "bilanAFaire": false,
-    "previsite": true
+    "previsite": true,
+    "grade": "",
+    "cis": "CIS Bouillante",
+    "derniereVisite": "",
+    "restriction": "",
+    "telephone": "",
+    "email": "",
+    "historique": []
   },
   {
     "id": 14,
@@ -151,7 +242,14 @@
     "aptitude": "NON A JOUR",
     "observations": "Visite du 09/10/2024 absent RDV pré-visite  à PRENDRE",
     "bilanAFaire": false,
-    "previsite": true
+    "previsite": true,
+    "grade": "",
+    "cis": "CIS Bouillante",
+    "derniereVisite": "",
+    "restriction": "",
+    "telephone": "",
+    "email": "",
+    "historique": []
   },
   {
     "id": 15,
@@ -162,7 +260,14 @@
     "aptitude": "NON A JOUR",
     "observations": "",
     "bilanAFaire": false,
-    "previsite": false
+    "previsite": false,
+    "grade": "",
+    "cis": "CIS Bouillante",
+    "derniereVisite": "",
+    "restriction": "",
+    "telephone": "",
+    "email": "",
+    "historique": []
   },
   {
     "id": 16,
@@ -173,7 +278,14 @@
     "aptitude": "NON A JOUR",
     "observations": "BILAN A FAIRE",
     "bilanAFaire": true,
-    "previsite": false
+    "previsite": false,
+    "grade": "",
+    "cis": "CIS Bouillante",
+    "derniereVisite": "",
+    "restriction": "",
+    "telephone": "",
+    "email": "",
+    "historique": []
   },
   {
     "id": 17,
@@ -184,7 +296,14 @@
     "aptitude": "NON A JOUR",
     "observations": "",
     "bilanAFaire": false,
-    "previsite": false
+    "previsite": false,
+    "grade": "",
+    "cis": "CIS Bouillante",
+    "derniereVisite": "",
+    "restriction": "",
+    "telephone": "",
+    "email": "",
+    "historique": []
   },
   {
     "id": 18,
@@ -195,7 +314,14 @@
     "aptitude": "EXPIRE BIENTOT",
     "observations": "",
     "bilanAFaire": false,
-    "previsite": false
+    "previsite": false,
+    "grade": "",
+    "cis": "CIS Bouillante",
+    "derniereVisite": "",
+    "restriction": "",
+    "telephone": "",
+    "email": "",
+    "historique": []
   },
   {
     "id": 19,
@@ -206,7 +332,14 @@
     "aptitude": "NON A JOUR",
     "observations": "RDV pré-visite  30/06",
     "bilanAFaire": false,
-    "previsite": true
+    "previsite": true,
+    "grade": "",
+    "cis": "CIS Bouillante",
+    "derniereVisite": "",
+    "restriction": "",
+    "telephone": "",
+    "email": "",
+    "historique": []
   },
   {
     "id": 20,
@@ -217,7 +350,14 @@
     "aptitude": "NON A JOUR",
     "observations": "",
     "bilanAFaire": false,
-    "previsite": false
+    "previsite": false,
+    "grade": "",
+    "cis": "CIS Bouillante",
+    "derniereVisite": "",
+    "restriction": "",
+    "telephone": "",
+    "email": "",
+    "historique": []
   },
   {
     "id": 21,
@@ -228,7 +368,14 @@
     "aptitude": "A JOUR",
     "observations": "",
     "bilanAFaire": false,
-    "previsite": false
+    "previsite": false,
+    "grade": "",
+    "cis": "CIS Bouillante",
+    "derniereVisite": "",
+    "restriction": "",
+    "telephone": "",
+    "email": "",
+    "historique": []
   },
   {
     "id": 22,
@@ -239,7 +386,14 @@
     "aptitude": "NON A JOUR",
     "observations": "",
     "bilanAFaire": false,
-    "previsite": false
+    "previsite": false,
+    "grade": "",
+    "cis": "CIS Bouillante",
+    "derniereVisite": "",
+    "restriction": "",
+    "telephone": "",
+    "email": "",
+    "historique": []
   },
   {
     "id": 23,
@@ -250,7 +404,14 @@
     "aptitude": "NON A JOUR",
     "observations": "",
     "bilanAFaire": false,
-    "previsite": false
+    "previsite": false,
+    "grade": "",
+    "cis": "CIS Bouillante",
+    "derniereVisite": "",
+    "restriction": "",
+    "telephone": "",
+    "email": "",
+    "historique": []
   },
   {
     "id": 24,
@@ -261,7 +422,14 @@
     "aptitude": "NON A JOUR",
     "observations": "",
     "bilanAFaire": false,
-    "previsite": false
+    "previsite": false,
+    "grade": "",
+    "cis": "CIS Bouillante",
+    "derniereVisite": "",
+    "restriction": "",
+    "telephone": "",
+    "email": "",
+    "historique": []
   },
   {
     "id": 25,
@@ -272,7 +440,14 @@
     "aptitude": "NON A JOUR",
     "observations": "RDV pré-visite  à PRENDRE",
     "bilanAFaire": false,
-    "previsite": true
+    "previsite": true,
+    "grade": "",
+    "cis": "CIS Bouillante",
+    "derniereVisite": "",
+    "restriction": "",
+    "telephone": "",
+    "email": "",
+    "historique": []
   },
   {
     "id": 26,
@@ -283,7 +458,14 @@
     "aptitude": "NON A JOUR",
     "observations": "",
     "bilanAFaire": false,
-    "previsite": false
+    "previsite": false,
+    "grade": "",
+    "cis": "CIS Bouillante",
+    "derniereVisite": "",
+    "restriction": "",
+    "telephone": "",
+    "email": "",
+    "historique": []
   },
   {
     "id": 27,
@@ -294,7 +476,14 @@
     "aptitude": "NON A JOUR",
     "observations": "",
     "bilanAFaire": false,
-    "previsite": false
+    "previsite": false,
+    "grade": "",
+    "cis": "CIS Bouillante",
+    "derniereVisite": "",
+    "restriction": "",
+    "telephone": "",
+    "email": "",
+    "historique": []
   },
   {
     "id": 28,
@@ -305,7 +494,14 @@
     "aptitude": "EXPIRE BIENTOT",
     "observations": "",
     "bilanAFaire": false,
-    "previsite": false
+    "previsite": false,
+    "grade": "",
+    "cis": "CIS Bouillante",
+    "derniereVisite": "",
+    "restriction": "",
+    "telephone": "",
+    "email": "",
+    "historique": []
   },
   {
     "id": 29,
@@ -316,7 +512,14 @@
     "aptitude": "NON A JOUR",
     "observations": "",
     "bilanAFaire": false,
-    "previsite": false
+    "previsite": false,
+    "grade": "",
+    "cis": "CIS Bouillante",
+    "derniereVisite": "",
+    "restriction": "",
+    "telephone": "",
+    "email": "",
+    "historique": []
   },
   {
     "id": 30,
@@ -327,7 +530,14 @@
     "aptitude": "A JOUR",
     "observations": "",
     "bilanAFaire": false,
-    "previsite": false
+    "previsite": false,
+    "grade": "",
+    "cis": "CIS Bouillante",
+    "derniereVisite": "",
+    "restriction": "",
+    "telephone": "",
+    "email": "",
+    "historique": []
   },
   {
     "id": 31,
@@ -338,7 +548,14 @@
     "aptitude": "NON A JOUR",
     "observations": "",
     "bilanAFaire": false,
-    "previsite": false
+    "previsite": false,
+    "grade": "",
+    "cis": "CIS Bouillante",
+    "derniereVisite": "",
+    "restriction": "",
+    "telephone": "",
+    "email": "",
+    "historique": []
   },
   {
     "id": 32,
@@ -349,7 +566,14 @@
     "aptitude": "NON A JOUR",
     "observations": "RDV pré-visite  30/06",
     "bilanAFaire": false,
-    "previsite": true
+    "previsite": true,
+    "grade": "",
+    "cis": "CIS Bouillante",
+    "derniereVisite": "",
+    "restriction": "",
+    "telephone": "",
+    "email": "",
+    "historique": []
   },
   {
     "id": 33,
@@ -360,7 +584,14 @@
     "aptitude": "NON A JOUR",
     "observations": "RDV PREVISITE A PRENDRE",
     "bilanAFaire": false,
-    "previsite": true
+    "previsite": true,
+    "grade": "",
+    "cis": "CIS Bouillante",
+    "derniereVisite": "",
+    "restriction": "",
+    "telephone": "",
+    "email": "",
+    "historique": []
   },
   {
     "id": 34,
@@ -371,7 +602,14 @@
     "aptitude": "NON A JOUR",
     "observations": "",
     "bilanAFaire": false,
-    "previsite": false
+    "previsite": false,
+    "grade": "",
+    "cis": "CIS Bouillante",
+    "derniereVisite": "",
+    "restriction": "",
+    "telephone": "",
+    "email": "",
+    "historique": []
   },
   {
     "id": 35,
@@ -382,7 +620,14 @@
     "aptitude": "NON A JOUR",
     "observations": "",
     "bilanAFaire": false,
-    "previsite": false
+    "previsite": false,
+    "grade": "",
+    "cis": "CIS Bouillante",
+    "derniereVisite": "",
+    "restriction": "",
+    "telephone": "",
+    "email": "",
+    "historique": []
   },
   {
     "id": 36,
@@ -393,7 +638,14 @@
     "aptitude": "NON A JOUR",
     "observations": "RDV pré-visite  à PRENDRE",
     "bilanAFaire": false,
-    "previsite": true
+    "previsite": true,
+    "grade": "",
+    "cis": "CIS Bouillante",
+    "derniereVisite": "",
+    "restriction": "",
+    "telephone": "",
+    "email": "",
+    "historique": []
   },
   {
     "id": 37,
@@ -404,7 +656,14 @@
     "aptitude": "NON A JOUR",
     "observations": "RDV pré-visite  à PRENDRE",
     "bilanAFaire": false,
-    "previsite": true
+    "previsite": true,
+    "grade": "",
+    "cis": "CIS Bouillante",
+    "derniereVisite": "",
+    "restriction": "",
+    "telephone": "",
+    "email": "",
+    "historique": []
   },
   {
     "id": 38,
@@ -415,6 +674,13 @@
     "aptitude": "NON A JOUR",
     "observations": "",
     "bilanAFaire": false,
-    "previsite": false
+    "previsite": false,
+    "grade": "",
+    "cis": "CIS Bouillante",
+    "derniereVisite": "",
+    "restriction": "",
+    "telephone": "",
+    "email": "",
+    "historique": []
   }
 ]

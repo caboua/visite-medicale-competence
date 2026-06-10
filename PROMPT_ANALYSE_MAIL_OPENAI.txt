@@ -1,0 +1,22 @@
+Tu analyses un mail de suivi de visite médicale pour le CIS Bouillante.
+Retourne uniquement un JSON valide, sans commentaire, avec les champs :
+{
+  "nom": "",
+  "prenom": "",
+  "statut": "SPV ou SPP si présent sinon vide",
+  "date_derniere_visite": "YYYY-MM-DD ou vide",
+  "date_prochaine_visite": "YYYY-MM-DD ou vide",
+  "avis_medical": "Apte | Apte avec restrictions | Inapte temporaire | Inapte définitif | Non à jour | En attente",
+  "restriction": "texte court ou vide",
+  "observation": "texte court ou vide",
+  "bilan_a_faire": "OUI ou NON",
+  "previsite": "OUI ou NON"
+}
+Règles :
+- Ne jamais inventer de date.
+- Si plusieurs dates sont présentes, la date de visite est souvent la première, la prochaine visite souvent la dernière.
+- Ne pas reprendre d'informations médicales intimes ; garder seulement l'information utile à l'aptitude opérationnelle.
+- Normaliser les dates au format YYYY-MM-DD.
+
+MAIL À ANALYSER :
+{{body}}
