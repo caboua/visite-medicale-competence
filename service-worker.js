@@ -1,0 +1,1 @@
+self.addEventListener('install',e=>e.waitUntil(caches.open('vmc-v1').then(c=>c.addAll(['./','./index.html','./agents.json','./manifest.json']))));self.addEventListener('fetch',e=>e.respondWith(caches.match(e.request).then(r=>r||fetch(e.request))));
