@@ -1,0 +1,21 @@
+﻿decision,nom,prenom,fichier_retenu,cis,date_certificat,validite,avis,note
+INCLUS,ABENAQUI,Cédric,ABENAQUI Cédric.pdf,CIS BOUILLANTE,10/04/2025,14/04/2026,Apte sans restriction,Bouillante confirmé
+EXCLU,ASDRUBAL,Cédric,ASDRUBAL Cedric.pdf,CIS BELOST,02/02/2026,15/11/2026,Apte sans restriction,Pas Bouillante
+EXCLU,ASDRUBAL,Emma,ASDRUBAL Emma.pdf,CIS BELOST,24/01/2025,28/01/2027,Restriction opérationnelle,Pas Bouillante
+INCLUS,ASDRUBAL,Eric,ASDRUBAL Eric.pdf,CIS BOUILLANTE,21/05/2026,31/05/2027,Apte sans restriction,Bouillante confirmé
+EXCLU,ASDRUBAL,Florian,ASDRUBAL Florian.pdf,CIS BELOST,22/05/2025,26/05/2027,Apte sans restriction,Pas Bouillante
+EXCLU,ASDRUBAL,Loise,ASDRUBAL Loise.pdf,CIS ABYMES,24/10/2025,30/11/2027,Restriction opérationnelle,Pas Bouillante
+EXCLU,ASDRUBAL,Philippe,ASDRUBAL Philippe 12.05.26.pdf,Non visible,12/05/2026,11/05/2027,Apte sans restriction,CIS non confirmé Bouillante
+EXCLU,ASDRUBAL,Stéphanie,ASDRUBAL Stéphanie.pdf,CIS ABYMES,24/07/2025,28/07/2026,Apte sans restriction,Pas Bouillante
+INCLUS,BALTUS,Franck,BALTUS Franck.pdf,CIS BOUILLANTE,23/02/2026,20/02/2027,Apte sans restriction,Bouillante confirmé
+ANCIEN,BALTUS,Lydia,BALTUS Lidia.pdf,CIS BOUILLANTE,24/02/2025,23/12/2026,Apte sans restriction,Non retenu car un certificat plus récent existe
+INCLUS,BALTUS,Lydia,BALTUS Lydia 30.04.27.pdf,CIS BOUILLANTE confirmé par ancien certificat,30/04/2026,30/04/2027,Apte sans restriction,Dernier fichier retenu
+INCLUS,BAPTISTE,Bruce,BAPTISTE Bruce.pdf,Bouillante,21/05/2026,27/05/2027,Apte avec restriction opérationnelle,Bouillante confirmé manuscrit
+INCLUS,BOISDUR,Harry,BOISDUR Harry ( bouillante).pdf,CIS BOUILLANTE,13/01/2025,23/08/2026,Apte sans restriction,Bouillante confirmé
+EXCLU,BRUDEY,Guillaume,BRUDEY Guillaume.pdf,GTO,02/12/2025,07/12/2026,Apte sans restriction,Pas Bouillante
+INCLUS,CLARKE,Jean-Claude,CLARKE Jean Claude.pdf,CIS BOUILLANTE,20/02/2025,25/02/2026,Apte avec restriction opérationnelle,Bouillante confirmé
+INCLUS,DABRIOU,Bethy,DABRIOU Bethy 10.11.2025.pdf,CIS BOUILLANTE,28/10/2025,20/09/2026,Apte sans restriction,Plus récent que les fichiers de juin 2025
+ANCIEN,DABRIOU,Bethy,DABRIOU Betty Reprise 13.06.2025.pdf,Bouillante,13/06/2025,31/08/2025,Restriction opérationnelle / reprise,Non retenu car ancien
+ANCIEN,DABRIOU,Bethy,DABRIOU Betty.pdf,Bouillante,15/06/2025,20/09/2026,Restriction opérationnelle,Non retenu car certificat plus récent du 28/10/2025
+INCLUS,DARLIS,Marie-Odile,DARLIS Marie-Odile.pdf,CIS BOUILLANTE,25/11/2025,04/12/2026,Apte avec restriction opérationnelle,Bouillante confirmé
+EXCLU,DELOUMEAUX,Laurent,DELOUMEAUX Laurent.pdf,CIS MAE,09/10/2025,13/10/2026,Apte sans restriction,Pas Bouillante

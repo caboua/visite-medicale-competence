@@ -1,0 +1,17 @@
+VERSION V9 - Mise a jour certificats Bouillante
+
+Cette version met a jour la base a partir des certificats fournis en ne conservant que les agents dont le CIS/Service est Bouillante.
+
+Regle appliquee :
+- si le certificat indique CIS BOUILLANTE ou Bouillante : mise a jour de la fiche.
+- si le certificat indique un autre CIS : exclusion.
+- si le CIS n'est pas visible : exclusion, sauf doublon d'un agent deja confirme Bouillante et fichier plus recent.
+
+Agents mis a jour :
+ABENAQUI Cedric, ASDRUBAL Eric, BALTUS Franck, BALTUS Lydia, BAPTISTE Bruce, BOISDUR Harry, CLARKE Jean-Claude, DABRIOU Bethy, DARLIS Marie-Odile.
+
+Fichiers ignores :
+ASDRUBAL Cedric, Emma, Florian, Loise, Philippe, Stephanie, BRUDEY Guillaume, DELOUMEAUX Laurent, ainsi que les anciens DABRIOU/BALTUS non retenus.
+
+Pour GitHub : envoyer tous les fichiers de ce ZIP a la racine du depot, puis ouvrir :
+https://caboua.github.io/visite-medicale-competence/?reset=1&v=9

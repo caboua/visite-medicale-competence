@@ -1,0 +1,6 @@
+Version V8 - Ordre alphabétique
+
+- La liste Fiches agents est triée automatiquement par NOM puis Prénom.
+- Les exports CSV sont également triés par ordre alphabétique.
+- Les priorités du tableau de bord gardent leur tri par urgence.
+- Pour forcer la mise à jour sur iPhone : ouvrir ?reset=1&v=8.
