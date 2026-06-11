@@ -1,0 +1,18 @@
+VERSION V11 - MISE A JOUR FICHIERS + BASE PERMANENTE
+
+Cette version corrige le probleme principal :
+le site GitHub Pages ne peut pas modifier tout seul le fichier agents.json sur GitHub.
+
+Fonctionnement :
+1. Ouvrir l'onglet Mise a jour fichiers.
+2. Choisir les certificats PDF.
+3. Cliquer sur Appliquer les mises a jour retenues.
+4. Les fiches sont mises a jour dans la base locale du navigateur.
+5. Cliquer sur Telecharger agents.json.
+6. Remplacer le fichier agents.json dans GitHub.
+7. Ouvrir https://caboua.github.io/visite-medicale-competence/?reset=1&v=11
+
+Important :
+Les PDF scannes ne contiennent pas de texte exploitable directement par le navigateur.
+La reconnaissance automatique fonctionne avec les certificats deja integres dans la table de correspondance.
+Pour une mise a jour totalement automatique et permanente, il faudra passer par Google Sheet + Make.
