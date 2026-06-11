@@ -1,0 +1,13 @@
+VERSION V10 - MISE A JOUR PAR FICHIERS PDF
+
+Modifications :
+- Suppression de la partie 'Preparer un certificat PDF'.
+- Suppression de l'ecran 'Analyser un mail recu'.
+- Ajout de l'onglet 'Mise a jour fichiers'.
+- Possibilite de selectionner plusieurs certificats PDF.
+- Le logiciel retient uniquement les agents CIS Bouillante.
+- Les agents d'autres centres sont exclus automatiquement.
+- Quand plusieurs certificats sont selectionnes pour un meme agent, la fiche la plus recente est retenue.
+
+Apres remplacement des fichiers sur GitHub, ouvrir :
+https://caboua.github.io/visite-medicale-competence/?reset=1&v=10
