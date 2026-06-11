@@ -1,0 +1,23 @@
+GUIDE V16 - SCAN DOCUMENT PAR IA POUR MISE A JOUR DES FICHES
+
+Cette version ne depend plus uniquement de Tesseract dans le navigateur.
+Le mode fiable est : Application -> Webhook Make -> OpenAI Vision -> JSON -> Mise a jour de la fiche.
+
+ETAPES MAKE :
+1. Creer un scenario Make.
+2. Module 1 : Webhooks > Custom webhook.
+3. Copier l'URL du webhook.
+4. Dans l'application, onglet Scan documents, coller l'URL puis Enregistrer.
+5. Dans Make, ajouter OpenAI / ChatGPT Vision ou module HTTP vers OpenAI Responses API.
+6. Envoyer le PDF ou l'image a l'IA et demander une reponse JSON stricte.
+7. Make doit renvoyer le JSON au navigateur avec Webhook response.
+
+CHAMPS JSON ATTENDUS :
+nom, prenom, matricule, cis, derniereVisite, prochaineVisite, aptitude, restriction, restrictionOperationnelle, inaptitude, typeInaptitude, typeVisite.
+
+REGLE DE SECURITE :
+L'application applique uniquement si CIS contient Bouillante et si l'agent existe dans la base Bouillante.
+Sinon le document est affiche dans A verifier ou Exclus.
+
+APRES MISE A JOUR :
+Cliquer sur Telecharger agents.json puis remplacer agents.json sur GitHub pour rendre la base permanente.
