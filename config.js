@@ -1,2 +1,2 @@
-// Version 10 - mise a jour par fichiers PDF, base Bouillante uniquement
-window.APP_CONFIG = { remoteJsonUrl: '' };
+// Version 15 - scan OCR renforce
+window.APP_CONFIG = { remoteJsonUrl: '', makeWebhookUrl: '' };

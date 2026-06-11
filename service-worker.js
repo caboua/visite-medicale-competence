@@ -1,3 +1,4 @@
-// V14 : service worker désactivé pour éviter les erreurs de cache HTTP 400.
-self.addEventListener('install', event => self.skipWaiting());
-self.addEventListener('activate', event => { event.waitUntil(self.clients.claim()); });
+// V15 : cache desactive pour eviter les anciennes versions
+self.addEventListener('install', e => self.skipWaiting());
+self.addEventListener('activate', e => e.waitUntil((async()=>{const keys=await caches.keys(); await Promise.all(keys.map(k=>caches.delete(k))); await self.clients.claim();})()));
+self.addEventListener('fetch', e => { e.respondWith(fetch(e.request, {cache:'no-store'}).catch(()=>fetch(e.request))); });
