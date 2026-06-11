@@ -22,3 +22,9 @@ Les alertes se déclenchent si :
 - la date est expirée,
 - la visite expire dans 60 jours ou moins,
 - la date de validité est absente ou illisible.
+
+CORRECTION INCLUSE :
+- lecture des champs actuels agents.json : prochaineVisite, derniereVisite, derniereMaj ;
+- lecture des dates au format 2026-06-10 ;
+- exclusion de 'Aucune' dans le tableau restrictions ;
+- rechargement sans cache pour afficher la base la plus récente.

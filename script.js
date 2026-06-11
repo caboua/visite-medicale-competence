@@ -6,12 +6,12 @@ const FIELD_ALIASES = {
   nom: ["nom", "Nom", "NOM"],
   prenom: ["prenom", "Prénom", "Prenom", "PRENOM"],
   matricule: ["matricule", "Matricule", "MATRICULE"],
-  derniereVisite: ["derniere_visite", "Dernière visite", "date_visite", "Date visite"],
-  validite: ["date_validite", "prochaine_visite", "Prochaine visite", "validite", "Validité"],
+  derniereVisite: ["derniereVisite", "derniere_visite", "Dernière visite", "date_visite", "Date visite"],
+  validite: ["prochaineVisite", "date_validite", "prochaine_visite", "Prochaine visite", "validite", "Validité"],
   aptitude: ["aptitude", "Aptitude", "avis_medical", "Avis médical", "statut_aptitude"],
   inaptitude: ["inaptitude", "Inaptitude"],
   restriction: ["restriction", "Restriction", "restrictions", "Restrictions"],
-  maj: ["derniere_mise_a_jour", "Dernière mise à jour", "maj"]
+  maj: ["derniereMaj", "derniere_mise_a_jour", "Dernière mise à jour", "maj"]
 };
 
 function valueOf(agent, names) {
@@ -41,7 +41,18 @@ function normalize(text) {
 
 function parseDateFR(text) {
   if (!text) return null;
-  const match = String(text).match(/(\d{1,2})[\/\-. ](\d{1,2})[\/\-. ](\d{2,4})/);
+  const raw = String(text).trim();
+
+  // Format GitHub/app : 2026-06-10
+  const iso = raw.match(/^(\d{4})-(\d{1,2})-(\d{1,2})$/);
+  if (iso) {
+    const [, y, m, d] = iso;
+    const date = new Date(Number(y), Number(m) - 1, Number(d));
+    return Number.isNaN(date.getTime()) ? null : date;
+  }
+
+  // Format français : 10/06/2026 ou 10.06.2026
+  const match = raw.match(/(\d{1,2})[\/\-. ](\d{1,2})[\/\-. ](\d{2,4})/);
   if (!match) return null;
   let [, d, m, y] = match;
   y = Number(y.length === 2 ? "20" + y : y);
@@ -81,10 +92,13 @@ function medicalStatus(agent) {
   const days = daysUntil(validDate);
   const aptitudeText = normalize([agent.aptitude, agent.inaptitude, agent.restriction].join(" "));
 
-  if (aptitudeText.includes("inapte") || agent.inaptitude) {
+  const inaptitudeOui = normalize(agent.inaptitude) === "oui" || aptitudeText.includes("inapte");
+  const restrictionReelle = agent.restriction && normalize(agent.restriction) !== "aucune" && normalize(agent.restriction) !== "non";
+
+  if (inaptitudeOui) {
     return { label: "Inapte", cls: "danger-badge", priority: 0 };
   }
-  if (agent.restriction || aptitudeText.includes("restriction")) {
+  if (restrictionReelle || aptitudeText.includes("restriction operationnelle")) {
     return { label: "Restriction", cls: "warn", priority: 1 };
   }
   if (days === null) {
@@ -106,7 +120,9 @@ function isAlert(agent) {
 
 function isInaptitudeOrRestriction(agent) {
   const text = normalize([agent.aptitude, agent.inaptitude, agent.restriction].join(" "));
-  return Boolean(agent.inaptitude || agent.restriction || text.includes("inapte") || text.includes("restriction"));
+  const inaptitudeOui = normalize(agent.inaptitude) === "oui" || text.includes("inapte");
+  const restrictionReelle = agent.restriction && normalize(agent.restriction) !== "aucune" && normalize(agent.restriction) !== "non";
+  return Boolean(inaptitudeOui || restrictionReelle || text.includes("restriction operationnelle"));
 }
 
 function escapeHtml(text) {
