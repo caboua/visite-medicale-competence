@@ -1,0 +1,22 @@
+VERSION V13 - SCAN DOCUMENT POUR MISE A JOUR
+
+Objectif :
+- Televerser un certificat PDF ou image depuis le logiciel.
+- Scanner le document avec OCR / IA locale dans le navigateur.
+- Identifier agent, CIS, aptitude, inaptitude, restriction et dates.
+- Accepter uniquement les documents Bouillante confirmes.
+- Appliquer la mise a jour a la base locale.
+- Telecharger agents.json puis remplacer le fichier sur GitHub pour rendre la mise a jour permanente.
+
+Procedure :
+1. Ouvrir l application avec ?reset=1&v=13.
+2. Aller dans Scan documents.
+3. Cliquer sur Telecharger et scanner PDF / images.
+4. Selectionner les certificats.
+5. Controler les champs detectes.
+6. Cliquer sur Appliquer a la base locale.
+7. Cliquer sur Telecharger agents.json.
+8. Remplacer agents.json sur GitHub.
+
+Limite :
+Les documents tres flous ou manuscrits peuvent etre places en A verifier manuellement.

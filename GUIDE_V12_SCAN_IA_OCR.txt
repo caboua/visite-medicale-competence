@@ -1,0 +1,22 @@
+VISITE MEDICALE & COMPETENCE - V12 SCAN IA / OCR
+
+Nouveaute : onglet Mise a jour fichiers avec scan OCR des certificats PDF ou images.
+
+Utilisation :
+1. Ouvrir l'application.
+2. Aller dans Mise a jour fichiers.
+3. Cliquer sur Scanner PDF / images.
+4. Selectionner un ou plusieurs certificats.
+5. Attendre la lecture OCR.
+6. Verifier le tableau :
+   - Mises a jour pretes : Bouillante confirme, agent reconnu, date reconnue.
+   - A verifier : OCR incomplet ou CIS non lisible.
+   - Exclus : autre centre detecte.
+7. Cliquer sur Appliquer a la base locale.
+8. Cliquer sur Telecharger agents.json.
+9. Remplacer agents.json sur GitHub pour rendre la mise a jour permanente.
+
+Important :
+- Les documents flous ou manuscrits peuvent etre mal reconnus.
+- Les donnees medicales restent sensibles. GitHub Pages public n'est pas une securite professionnelle.
+- Pour une lecture IA plus fiable, la prochaine evolution sera un webhook Make + OpenAI Vision cote serveur.
