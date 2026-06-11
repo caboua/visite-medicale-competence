@@ -1,4 +1,3 @@
-const CACHE='visite-medicale-v13';
-self.addEventListener('install',e=>{self.skipWaiting();e.waitUntil(caches.open(CACHE).then(c=>c.addAll(['./','./index.html','./agents.json','./manifest.json','./icon.svg','./config.js']))) });
-self.addEventListener('activate',e=>{e.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k!==CACHE).map(k=>caches.delete(k)))));self.clients.claim()});
-self.addEventListener('fetch',e=>{e.respondWith(fetch(e.request).then(r=>{const copy=r.clone();caches.open(CACHE).then(c=>c.put(e.request,copy));return r}).catch(()=>caches.match(e.request))) });
+// V14 : service worker désactivé pour éviter les erreurs de cache HTTP 400.
+self.addEventListener('install', event => self.skipWaiting());
+self.addEventListener('activate', event => { event.waitUntil(self.clients.claim()); });

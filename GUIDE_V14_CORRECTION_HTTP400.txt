@@ -1,0 +1,11 @@
+VERSION V14 - CORRECTION HTTP ERROR 400
+
+Cette version désactive l'ancien cache/service-worker qui pouvait garder une ancienne version ou provoquer une erreur HTTP 400.
+
+Installation :
+1. Décompresser le ZIP.
+2. Remplacer les fichiers sur GitHub : index.html, agents.json, manifest.json, service-worker.js, config.js, icon.svg.
+3. Ouvrir : https://caboua.github.io/visite-medicale-competence/?reset=1&v=14
+4. Faire CTRL+F5 sur ordinateur. Sur iPhone, supprimer l'ancienne icône puis ajouter à nouveau depuis Safari.
+
+Fonction : onglet Scan documents -> Télécharger et scanner PDF / images -> Appliquer à la base locale -> Télécharger agents.json -> remplacer agents.json sur GitHub.

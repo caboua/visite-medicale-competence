@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="theme-color" content="#0f766e">
-<title>Visite Médicale & Compétence — V13 SCAN DOCUMENT</title><link rel="manifest" href="manifest.json">
+<title>Visite Médicale & Compétence — V14 SCAN DOCUMENT CORRIGE</title><link rel="manifest" href="manifest.json">
 <style>
 :root{--bg:#f4f7f6;--card:#fff;--ink:#0f172a;--muted:#64748b;--green:#16a34a;--orange:#f59e0b;--red:#dc2626;--teal:#0f766e;--line:#dbe3ea;--black:#111827;--blue:#2563eb;--purple:#7c3aed}
 *{box-sizing:border-box} body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;background:var(--bg);color:var(--ink)}
@@ -16,9 +16,9 @@ main{padding:14px;max-width:1180px;margin:auto}.tabs{display:flex;gap:8px;overfl
 @media(min-width:760px){.grid{grid-template-columns:repeat(7,1fr)}.cols{grid-template-columns:1fr 1fr}.modal{align-items:center;justify-content:center}.modalbox{max-width:920px;border-radius:24px}#agentRows{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}}
 @media print{header,.tabs,button,.noPrint{display:none!important}main{max-width:none}.panel{display:block}body{background:white}.card{box-shadow:none;break-inside:avoid}}
 </style></head><body>
-<header><h1>VISITE MÉDICALE & COMPÉTENCE</h1><p>CIS Bouillante — V13 : scanner un document et mettre à jour la fiche</p></header>
+<header><h1>VISITE MÉDICALE & COMPÉTENCE</h1><p>CIS Bouillante — V14 : scanner un document et mettre à jour la fiche</p></header>
 <main><div class="tabs noPrint"><button class="active" data-tab="dashboard">Accueil</button><button data-tab="agents">Fiches agents</button><button data-tab="alertes">Alertes</button><button data-tab="inaptitudes">Inaptitudes</button><button data-tab="mail">Scan documents</button><button data-tab="exports">Exports</button><button data-tab="outils">Outils</button></div>
-<section id="dashboard" class="panel active"><div class="banner"><b>Version finale V13</b><br><span class="sub">Base Bouillante uniquement. Tu téléverses un PDF ou une image, le logiciel scanne le document, lit le certificat par OCR/IA locale, propose la mise à jour de la fiche, puis permet de télécharger agents.json pour GitHub.</span></div><div class="grid" id="kpis"></div><div class="card"><div class="row space"><h3>Priorités du jour</h3><button class="btn small primary" onclick="showTab('alertes')">Voir les alertes</button></div><div id="priorityList"></div></div></section>
+<section id="dashboard" class="panel active"><div class="banner"><b>Version finale V14</b><br><span class="sub">Base Bouillante uniquement. Tu téléverses un PDF ou une image, le logiciel scanne le document, lit le certificat par OCR/IA locale, propose la mise à jour de la fiche, puis permet de télécharger agents.json pour GitHub.</span></div><div class="grid" id="kpis"></div><div class="card"><div class="row space"><h3>Priorités du jour</h3><button class="btn small primary" onclick="showTab('alertes')">Voir les alertes</button></div><div id="priorityList"></div></div></section>
 <section id="agents" class="panel"><div class="card"><input id="q" class="search" placeholder="Rechercher : nom, prénom, SPV, SPP, matricule..." oninput="renderAgents()"><div class="row" style="margin-top:10px"><button class="btn small primary" onclick="setFilter('TOUS')">Toutes</button><button class="btn small" onclick="setFilter('SPV')">SPV</button><button class="btn small" onclick="setFilter('SPP')">SPP</button><button class="btn small danger" onclick="setFilter('EXPIRE')">Expirés</button><button class="btn small" onclick="setFilter('BIENTOT')">Bientôt</button><button class="btn small purple" onclick="setFilter('INAPTE')">Inaptes</button><button class="btn small blue" onclick="openAgent(null)">+ Nouvelle fiche</button></div></div><div id="agentRows"></div></section>
 <section id="alertes" class="panel"><div class="card"><h3>Alertes automatiques</h3><p class="sub">Tri par priorité : inaptitude, expiré, expire bientôt, pré-visite, bilan.</p></div><div id="alertsFull"></div></section>
 <section id="inaptitudes" class="panel"><div class="card"><div class="row space"><div><h3>Inaptitudes / Restrictions</h3><p class="sub">Suivi des inaptitudes temporaires, définitives, partielles, SHR et restrictions opérationnelles.</p></div><button class="btn purple" onclick="quickInaptitude()">+ Déclarer</button></div></div><div id="inaptitudeList"></div></section>
@@ -36,7 +36,7 @@ function daysLeft(a){let d=parseDate(a.prochaineVisite); if(!d) return 99999; re
 function status(a){ if(String(a.inaptitude||'').toLowerCase()==='oui') return {code:'INAPTE',label:'Inapte',cls:'black',prio:1}; let dl=daysLeft(a); if(dl===99999) return {code:'INCONNU',label:'À vérifier',cls:'bluePill',prio:4}; if(dl<0) return {code:'EXPIRE',label:'Expiré',cls:'late',prio:2}; if(dl<=30) return {code:'BIENTOT',label:'Expire bientôt',cls:'soon',prio:3}; return {code:'AJOUR',label:'À jour',cls:'ok',prio:5}; }
 function toast(t){let el=document.getElementById('toast'); el.textContent=t; el.classList.remove('hidden'); setTimeout(()=>el.classList.add('hidden'),2500)}
 function saveLocal(){localStorage.setItem(KEY, JSON.stringify(agents));}
-async function init(){ if(location.search.includes('reset=1')) localStorage.removeItem(KEY); let local=localStorage.getItem(KEY); if(local) agents=JSON.parse(local); else { try{let r=await fetch('agents.json?v=8',{cache:'no-store'}); agents=await r.json();}catch(e){agents=JSON.parse(document.getElementById('defaultAgents').textContent)} saveLocal(); } renderAll(); if('serviceWorker' in navigator) navigator.serviceWorker.register('service-worker.js').catch(()=>{}); }
+async function init(){ if(location.search.includes('reset=1')) { localStorage.removeItem(KEY); if(window.caches){try{const ks=await caches.keys(); await Promise.all(ks.map(k=>caches.delete(k)));}catch(e){}} } if('serviceWorker' in navigator){try{const regs=await navigator.serviceWorker.getRegistrations(); await Promise.all(regs.map(r=>r.unregister()));}catch(e){}} let local=localStorage.getItem(KEY); if(local) agents=JSON.parse(local); else { try{let r=await fetch('agents.json?v=14',{cache:'no-store'}); agents=await r.json();}catch(e){agents=JSON.parse(document.getElementById('defaultAgents').textContent)} saveLocal(); } renderAll(); if('serviceWorker' in navigator) navigator.serviceWorker.getRegistrations().then(rs=>rs.forEach(r=>r.unregister())).catch(()=>{}); }
 function renderAll(){ renderKPIs(); renderPriorities(); renderAgents(); renderAlerts(); renderInaptitudes(); renderExportPreview(); }
 function renderKPIs(){let total=agents.length, spv=agents.filter(a=>a.statut==='SPV').length, spp=agents.filter(a=>a.statut==='SPP').length; let counts={AJOUR:0,BIENTOT:0,EXPIRE:0,INAPTE:0,RESTR:0,BILAN:0}; agents.forEach(a=>{counts[status(a).code]=(counts[status(a).code]||0)+1; if(hasRestriction(a)) counts.RESTR++; if(a.bilanAFaire) counts.BILAN++;}); let data=[['Total',total,'Toutes fiches'],['À jour',counts.AJOUR,'Valide'],['Bientôt',counts.BIENTOT,'≤ 30 jours'],['Expirés',counts.EXPIRE,'Non à jour'],['Inaptes',counts.INAPTE,'À suivre'],['Restrictions',counts.RESTR,'Opérationnel'],['SPV / SPP',spv+' / '+spp,'Effectifs']]; kpis.innerHTML=data.map(x=>`<div class="card kpi"><span>${x[0]}</span><b>${x[1]}</b><span>${x[2]}</span></div>`).join(''); }
 function hasRestriction(a){return (a.restriction&&a.restriction.toLowerCase()!=='aucune') || (a.restrictionOperationnelle&&a.restrictionOperationnelle.toLowerCase()!=='non');}
@@ -77,8 +77,8 @@ function exportJSON(){download('visite_medicale_competence_export.json',JSON.str
 function downloadAgentsBase(){download('agents.json',JSON.stringify(alphaAgents(),null,2),'application/json'); toast('agents.json téléchargé');}
 function download(name,content,type){let blob=new Blob([content],{type}), a=document.createElement('a'); a.href=URL.createObjectURL(blob); a.download=name; a.click(); URL.revokeObjectURL(a.href);}
 function importJSON(e){let f=e.target.files[0]; if(!f) return; let r=new FileReader(); r.onload=()=>{agents=JSON.parse(r.result).filter(a=>String(a.cis||'').toUpperCase().includes('BOUILLANTE')); saveLocal(); renderAll(); toast('Import terminé');}; r.readAsText(f);}
-function resetData(){if(confirm('Effacer la sauvegarde locale ?')){localStorage.removeItem(KEY); location.href=location.pathname+'?reset=1&v=13';}}
-function forceReload(){localStorage.removeItem(KEY); location.href=location.pathname+'?reset=1&v=13';}
+function resetData(){if(confirm('Effacer la sauvegarde locale ?')){localStorage.removeItem(KEY); location.href=location.pathname+'?reset=1&v=14';}}
+function forceReload(){localStorage.removeItem(KEY); location.href=location.pathname+'?reset=1&v=14';}
 function renderExportPreview(){let rows=exportRows('expires').slice(0,12); exportPreview.innerHTML='<table><tr><th>Nom</th><th>Statut</th><th>Avis</th><th>Validité</th></tr>'+rows.map(a=>`<tr><td>${a.nom} ${a.prenom}</td><td>${status(a).label}</td><td>${a.aptitude||''}</td><td>${fmt(a.prochaineVisite)||''}</td></tr>`).join('')+'</table>';}
 
 // ======================= V13 scan document OCR / IA locale =======================
@@ -293,9 +293,9 @@ function clearFileUpdate(){
   const r=document.getElementById('fileUpdateResult'); if(r) r.innerHTML='';
 }
 function escapeHtml(s){return String(s||'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));}
-function forceReload(){localStorage.removeItem(KEY); location.href=location.pathname+'?reset=1&v=13';}
-function resetData(){if(confirm('Effacer la sauvegarde locale ?')){localStorage.removeItem(KEY); location.href=location.pathname+'?reset=1&v=13';}}
-// ======================= Fin V13 OCR =======================
+function forceReload(){localStorage.removeItem(KEY); location.href=location.pathname+'?reset=1&v=14';}
+function resetData(){if(confirm('Effacer la sauvegarde locale ?')){localStorage.removeItem(KEY); location.href=location.pathname+'?reset=1&v=14';}}
+// ======================= Fin V14 OCR =======================
 
 init();
 </script></body></html>
