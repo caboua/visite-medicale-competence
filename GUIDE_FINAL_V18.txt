@@ -1,0 +1,29 @@
+VISITE MEDICALE & COMPETENCE — VERSION FINALE V18
+
+1) METTRE A JOUR GITHUB
+- Décompresse ce ZIP.
+- Dans https://github.com/caboua/visite-medicale-competence : Add file > Upload files.
+- Envoie tous les fichiers décompressés, pas le ZIP.
+- Clique sur Commit changes.
+- Ouvre : https://caboua.github.io/visite-medicale-competence/vider_cache.html
+- Clique sur Vider le cache maintenant.
+
+2) UTILISER L’APPLICATION
+- Onglet Fiches agents : recherche, filtre, modification.
+- Onglet Alertes : expirés, bientôt expirés, bilans et pré-visites.
+- Onglet Inaptitudes : agents inaptes ou avec restriction.
+- Onglet Mise à jour PDF/IA : mise à jour manuelle assistée, collage JSON, ou IA via webhook.
+- Onglet Outils : télécharger agents.json, importer, sauvegarder, exporter CSV.
+
+3) PROCEDURE SIMPLE RECOMMANDEE POUR LES PDF
+- Envoyer les PDF à ChatGPT.
+- ChatGPT lit uniquement les agents Bouillante, garde le certificat le plus récent, et fournit un JSON ou agents.json.
+- Coller le JSON dans l’onglet Mise à jour PDF/IA, ou remplacer directement agents.json sur GitHub.
+
+4) RENDRE UNE MISE A JOUR PERMANENTE
+- Après une modification dans l’application, cliquer sur Télécharger agents.json.
+- Remplacer le fichier agents.json dans GitHub.
+- Ouvrir https://caboua.github.io/visite-medicale-competence/?reset=1&v=18
+
+5) SECURITE
+GitHub Pages est public. Pour une vraie version professionnelle avec données médicales, il faudra ensuite une base privée.

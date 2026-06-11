@@ -1,9 +1,9 @@
 {
   "name": "Visite Médicale & Compétence",
-  "short_name": "Visite Médicale",
-  "start_url": "./?v=13",
+  "short_name": "Visite Med",
+  "start_url": "./?v=18",
   "display": "standalone",
-  "background_color": "#f4f7f6",
+  "background_color": "#f3f7f6",
   "theme_color": "#0f766e",
   "icons": [
     {

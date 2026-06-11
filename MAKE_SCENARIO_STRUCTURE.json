@@ -1,15 +1,9 @@
 {
-  "version": "V7 finale",
-  "objectif": "Lire les mails/PDF reçus, conserver uniquement CIS BOUILLANTE, mettre à jour Google Sheet privé.",
-  "steps": [
-    "Gmail Watch emails",
-    "Download attachments",
-    "OCR/PDF text extraction",
-    "OpenAI extraction with prompt",
-    "Filter CIS contains BOUILLANTE",
-    "Find row in Google Sheet by nom+prenom or matricule",
-    "Update row and append historique",
-    "Archive PDF in Drive",
-    "Notify user"
-  ]
+  "objectif": "Recevoir un PDF/image depuis l'application, l'envoyer à OpenAI Vision, renvoyer un JSON de mise à jour.",
+  "modules": [
+    "Webhooks > Custom webhook",
+    "OpenAI > Vision / Analyze image",
+    "Webhooks > Webhook response"
+  ],
+  "response": "application/json"
 }

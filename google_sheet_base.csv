@@ -1,39 +1,39 @@
-﻿id,nom,prenom,matricule,statut,grade,cis,derniereVisite,prochaineVisite,aptitude,inaptitude,typeInaptitude,dateDebutInaptitude,dateFinInaptitude,restriction,restrictionOperationnelle,activitesSportives,bilanAFaire,previsite,observations,document,source,derniereMaj
-1,ABENAQUI,Cédric,22 303,SPV,,CIS Bouillante,2025-04-10,2026-04-14,Apte sans restriction,Non,,,,Aucune,Non,Autorisées,False,False,Certificat Bouillante retenu. Apte sans restriction. Valable jusqu’au 14/04/2026. Dernier fichier retenu pour cet agent.,ABENAQUI Cédric.pdf,PDF aptitude ABENAQUI Cédric,2026-06-10
-2,ASDRUBAL,Eric,21 749,SPV,,CIS Bouillante,2026-05-21,2027-05-31,Apte sans restriction,Non,,,,Aucune,Non,Autorisées,False,False,Certificat Bouillante retenu. Apte sans restriction. Aptitude conduite VL / VSAV cochée. Valable jusqu’au 31/05/2027.,ASDRUBAL Eric.pdf,PDF aptitude ASDRUBAL Eric,2026-06-10
-3,ASDRUBAL,Fabrice,,SPP,,CIS Bouillante,,2025-09-22,NON A JOUR,Non,,,,,,,False,False,,,Base Excel,
-5,BALTUS,Franck,22 448,SPV,,CIS Bouillante,2026-02-23,2027-02-20,Apte sans restriction,Non,,,,Aucune,Non,Autorisées,False,False,Certificat Bouillante retenu. Apte sans restriction. Valable jusqu’au 20/02/2027.,BALTUS Franck.pdf,PDF aptitude BALTUS Franck,2026-06-10
-4,BALTUS,Lydia,24 333,SPV,,CIS Bouillante,2026-04-30,2027-04-30,Apte sans restriction,Non,,,,Aucune,Non,Non renseigné,False,False,"Dernier fichier retenu pour BALTUS Lydia : certificat du 30/04/2026, valable jusqu’au 30/04/2027. CIS Bouillante confirmé par le certificat complet antérieur BALTUS Lidia.pdf.",BALTUS Lydia 30.04.27.pdf,PDF aptitude BALTUS Lydia 30.04.27,2026-06-10
-6,BAPTISTE,Bruce,21 842,SPV,,CIS Bouillante,2026-05-21,2027-05-27,Apte avec restriction opérationnelle,Non,,,,Restriction opérationnelle : port ARI indiqué sur le certificat,Oui,Autorisées,False,False,Certificat Bouillante retenu. Restriction opérationnelle cochée avec mention Port ARI. Valable jusqu’au 27/05/2027.,BAPTISTE Bruce.pdf,PDF aptitude BAPTISTE Bruce,2026-06-10
-7,BENJAMIN,Judith,,SPP,,CIS Bouillante,,2024-12-02,NON A JOUR,Non,,,,,,,True,False,BILAN A FAIRE,,Base Excel,
-8,BOISDUR,Harry,23 142,SPV,,CIS Bouillante,2025-01-13,2026-08-23,Apte sans restriction,Non,,,,Aucune,Non,Autorisées,False,False,Certificat Bouillante retenu. Apte sans restriction. Valable jusqu’au 23/08/2026.,BOISDUR Harry ( bouillante).pdf,PDF aptitude BOISDUR Harry,2026-06-10
-9,CAFFA,Olivier,,SPV,,CIS Bouillante,,2024-07-16,NON A JOUR,Non,,,,,,,False,True,RDV pré-visite  à PRENDRE,,Base Excel,
-10,CLARKE,Jean-claude,22 304,SPV,,CIS Bouillante,2025-02-20,2026-02-25,Apte avec restriction opérationnelle,Non,,,,Restriction opérationnelle cochée ; mention manuscrite à vérifier sur la conduite engin feu,Oui,Autorisées,False,False,"Certificat Bouillante retenu. Restriction opérationnelle cochée. Valable jusqu’au 25/02/2026, donc expiré si la date du jour est postérieure.",CLARKE Jean Claude.pdf,PDF aptitude CLARKE Jean-Claude,2026-06-10
-11,DABRIOU,Bethy,24 899,SPV,,CIS Bouillante,2025-10-28,2026-09-20,Apte sans restriction,Non,,,,Aucune,Non,Autorisées,False,True,"Plusieurs fichiers trouvés pour DABRIOU Bethy/Betty. Dernier certificat retenu : visite du 28/10/2025, valable jusqu’au 20/09/2026. Les certificats de juin 2025 sont conservés comme anciens.",DABRIOU Bethy 10.11.2025.pdf,PDF aptitude DABRIOU Bethy 10.11.2025,2026-06-10
-12,DAMBURY,Cyrille,,SPV,,CIS Bouillante,,2025-05-26,NON A JOUR,Non,,,,,,,False,True,RDV pré-visite  à PRENDRE,,Base Excel,
-13,DARLIS,Marie-Odile,22 641,SPV,,CIS Bouillante,2025-11-25,2026-12-04,Apte avec restriction opérationnelle,Non,,,,Restriction opérationnelle : incendie et SR cochés,Oui,Autorisées,False,True,Certificat Bouillante retenu. Restriction opérationnelle cochée avec incendie et SR. Valable jusqu’au 04/12/2026.,DARLIS Marie-Odile.pdf,PDF aptitude DARLIS Marie-Odile,2026-06-10
-14,ELIEN,Jeannick,,SPV,,CIS Bouillante,,2024-06-27,NON A JOUR,Non,,,,,,,False,True,Visite du 09/10/2024 absent RDV pré-visite  à PRENDRE,,Base Excel,
-15,ELISABETH,Philippe,,SPV,,CIS Bouillante,,2026-01-17,NON A JOUR,Non,,,,,,,False,False,,,Base Excel,
-16,ELMACIN,Adam,,SPV,,CIS Bouillante,,2025-06-09,NON A JOUR,Non,,,,,,,True,False,BILAN A FAIRE,,Base Excel,
-17,ENGOULEVENT,Leiny,,SPV,,CIS Bouillante,,2026-02-23,NON A JOUR,Non,,,,,,,False,False,,,Base Excel,
-18,FELIX,Ruddy,,SPV,,CIS Bouillante,,2026-06-16,EXPIRE BIENTOT,Non,,,,,,,False,False,,,Base Excel,
-19,FEUILLARD,Stéphane,,SPV,,CIS Bouillante,,2025-07-14,NON A JOUR,Non,,,,,,,False,True,RDV pré-visite  30/06,,Base Excel,
-20,FICADIERE,Josette,,SPV,,CIS Bouillante,,2026-04-22,NON A JOUR,Non,,,,,,,False,False,,,Base Excel,
-21,FIRPION,Ludjy,,SPV,,CIS Bouillante,,2026-11-30,A JOUR,Non,,,,,,,False,False,,,Base Excel,
-22,GUERET,Ludger,,SPV,,CIS Bouillante,,2025-12-31,NON A JOUR,Non,,,,,,,False,False,,,Base Excel,
-23,GUILLAUME,William,,SPV,,CIS Bouillante,,2026-02-10,NON A JOUR,Non,,,,,,,False,False,,,Base Excel,
-26,HATIL,Ruben,,SPV,,CIS Bouillante,,2025-12-01,NON A JOUR,Non,,,,,,,False,False,,,Base Excel,
-24,HATIL,Thierry,,SPV,,CIS Bouillante,,2026-01-17,NON A JOUR,Non,,,,,,,False,False,,,Base Excel,
-25,LABIRIN,Cécilia,,SPV,,CIS Bouillante,,2025-04-30,NON A JOUR,Non,,,,,,,False,True,RDV pré-visite  à PRENDRE,,Base Excel,
-27,LANCASTRE,Bruno,,SPP,,CIS Bouillante,,2026-02-10,NON A JOUR,Non,,,,,,,False,False,,,Base Excel,
-28,LAURENT,Miguel,,SPV,,CIS Bouillante,,2026-06-22,EXPIRE BIENTOT,Non,,,,,,,False,False,,,Base Excel,
-29,LEGRAVE,Didier,,SPV,,CIS Bouillante,,2026-01-13,NON A JOUR,Non,,,,,,,False,False,,,Base Excel,
-31,LOISEAU,Fred,,SPP,,CIS Bouillante,,2026-03-23,NON A JOUR,Non,,,,,,,False,False,,,Base Excel,
-30,LUCE,Précilla,,SPV,,CIS Bouillante,,2027-07-20,A JOUR,Non,,,,,,,False,False,,,Base Excel,
-32,MACIN,Adriana,,SPV,,CIS Bouillante,,2025-07-21,NON A JOUR,Non,,,,,,,False,True,RDV pré-visite  30/06,,Base Excel,
-33,MICOLON,Jérome,,SPV,,CIS Bouillante,,2025-07-31,NON A JOUR,Non,,,,,,,False,True,RDV PREVISITE A PRENDRE,,Base Excel,
-34,MONTOUT,Sindy,,SPV,,CIS Bouillante,,2025-10-30,NON A JOUR,Non,,,,,,,False,False,,,Base Excel,
-35,PALMYRE,Dylan,,SPV,,CIS Bouillante,,2026-01-13,NON A JOUR,Non,,,,,,,False,False,,,Base Excel,
-36,RACON,Sonel,,SPV,,CIS Bouillante,,2025-03-03,NON A JOUR,Non,,,,,,,False,True,RDV pré-visite  à PRENDRE,,Base Excel,
-37,SAINT-JULIEN,Landry,,SPV,,CIS Bouillante,,2025-07-31,NON A JOUR,Non,,,,,,,False,True,RDV pré-visite  à PRENDRE,,Base Excel,
-38,SAINT-PHOR,Thierry,,SPP,,CIS Bouillante,,2026-04-14,NON A JOUR,Non,,,,,,,False,False,,,Base Excel,
+﻿id;nom;prenom;statut;matricule;cis;derniereVisite;prochaineVisite;aptitude;inaptitude;restriction;activitesSportives;bilanAFaire;previsite;document;observations
+1;ABENAQUI;Cédric;SPV;22 303;CIS Bouillante;2025-04-10;2026-04-14;Apte sans restriction;Non;Aucune;Autorisées;False;False;ABENAQUI Cédric.pdf;Certificat Bouillante retenu. Apte sans restriction. Valable jusqu’au 14/04/2026. Dernier fichier retenu pour cet agent.
+2;ASDRUBAL;Eric;SPV;21 749;CIS Bouillante;2026-05-21;2027-05-31;Apte sans restriction;Non;Aucune;Autorisées;False;False;ASDRUBAL Eric.pdf;Certificat Bouillante retenu. Apte sans restriction. Aptitude conduite VL / VSAV cochée. Valable jusqu’au 31/05/2027.
+3;ASDRUBAL;Fabrice;SPP;;CIS Bouillante;;2025-09-22;NON A JOUR;Non;;;False;False;;
+4;BALTUS;Franck;SPV;22 448;CIS Bouillante;2026-02-23;2027-02-20;Apte sans restriction;Non;Aucune;Autorisées;False;False;BALTUS Franck.pdf;Certificat Bouillante retenu. Apte sans restriction. Valable jusqu’au 20/02/2027.
+5;BALTUS;Lydia;SPV;24 333;CIS Bouillante;2026-04-30;2027-04-30;Apte sans restriction;Non;Aucune;Non renseigné;False;False;BALTUS Lydia 30.04.27.pdf;Dernier fichier retenu pour BALTUS Lydia : certificat du 30/04/2026, valable jusqu’au 30/04/2027. CIS Bouillante confirmé par le certificat complet antérieur BALTUS Lidia.pdf.
+6;BAPTISTE;Bruce;SPV;21 842;CIS Bouillante;2026-05-21;2027-05-27;Apte avec restriction opérationnelle;Non;Restriction opérationnelle : port ARI indiqué sur le certificat;Autorisées;False;False;BAPTISTE Bruce.pdf;Certificat Bouillante retenu. Restriction opérationnelle cochée avec mention Port ARI. Valable jusqu’au 27/05/2027.
+7;BENJAMIN;Judith;SPP;;CIS Bouillante;;2024-12-02;NON A JOUR;Non;;;True;False;;BILAN A FAIRE
+8;BOISDUR;Harry;SPV;23 142;CIS Bouillante;2025-01-13;2026-08-23;Apte sans restriction;Non;Aucune;Autorisées;False;False;BOISDUR Harry ( bouillante).pdf;Certificat Bouillante retenu. Apte sans restriction. Valable jusqu’au 23/08/2026.
+9;CAFFA;Olivier;SPV;;CIS Bouillante;;2024-07-16;NON A JOUR;Non;;;False;True;;RDV pré-visite  à PRENDRE
+10;CLARKE;Jean-claude;SPV;22 304;CIS Bouillante;2025-02-20;2026-02-25;Apte avec restriction opérationnelle;Non;"Restriction opérationnelle cochée ; mention manuscrite à vérifier sur la conduite engin feu";Autorisées;False;False;CLARKE Jean Claude.pdf;Certificat Bouillante retenu. Restriction opérationnelle cochée. Valable jusqu’au 25/02/2026, donc expiré si la date du jour est postérieure.
+11;DABRIOU;Bethy;SPV;24 899;CIS Bouillante;2025-10-28;2026-09-20;Apte sans restriction;Non;Aucune;Autorisées;False;True;DABRIOU Bethy 10.11.2025.pdf;Plusieurs fichiers trouvés pour DABRIOU Bethy/Betty. Dernier certificat retenu : visite du 28/10/2025, valable jusqu’au 20/09/2026. Les certificats de juin 2025 sont conservés comme anciens.
+12;DAMBURY;Cyrille;SPV;;CIS Bouillante;;2025-05-26;NON A JOUR;Non;;;False;True;;RDV pré-visite  à PRENDRE
+13;DARLIS;Marie-Odile;SPV;22 641;CIS Bouillante;2025-11-25;2026-12-04;Apte avec restriction opérationnelle;Non;Restriction opérationnelle : incendie et SR cochés;Autorisées;False;True;DARLIS Marie-Odile.pdf;Certificat Bouillante retenu. Restriction opérationnelle cochée avec incendie et SR. Valable jusqu’au 04/12/2026.
+14;ELIEN;Jeannick;SPV;;CIS Bouillante;;2024-06-27;NON A JOUR;Non;;;False;True;;Visite du 09/10/2024 absent RDV pré-visite  à PRENDRE
+15;ELISABETH;Philippe;SPV;;CIS Bouillante;;2026-01-17;NON A JOUR;Non;;;False;False;;
+16;ELMACIN;Adam;SPV;;CIS Bouillante;;2025-06-09;NON A JOUR;Non;;;True;False;;BILAN A FAIRE
+17;ENGOULEVENT;Leiny;SPV;;CIS Bouillante;;2026-02-23;NON A JOUR;Non;;;False;False;;
+18;FELIX;Ruddy;SPV;;CIS Bouillante;;2026-06-16;EXPIRE BIENTOT;Non;;;False;False;;
+19;FEUILLARD;Stéphane;SPV;;CIS Bouillante;;2025-07-14;NON A JOUR;Non;;;False;True;;RDV pré-visite  30/06
+20;FICADIERE;Josette;SPV;;CIS Bouillante;;2026-04-22;NON A JOUR;Non;;;False;False;;
+21;FIRPION;Ludjy;SPV;;CIS Bouillante;;2026-11-30;A JOUR;Non;;;False;False;;
+22;GUERET;Ludger;SPV;;CIS Bouillante;;2025-12-31;NON A JOUR;Non;;;False;False;;
+23;GUILLAUME;William;SPV;;CIS Bouillante;;2026-02-10;NON A JOUR;Non;;;False;False;;
+24;HATIL;Ruben;SPV;;CIS Bouillante;;2025-12-01;NON A JOUR;Non;;;False;False;;
+25;HATIL;Thierry;SPV;;CIS Bouillante;;2026-01-17;NON A JOUR;Non;;;False;False;;
+26;LABIRIN;Cécilia;SPV;;CIS Bouillante;;2025-04-30;NON A JOUR;Non;;;False;True;;RDV pré-visite  à PRENDRE
+27;LANCASTRE;Bruno;SPP;;CIS Bouillante;;2026-02-10;NON A JOUR;Non;;;False;False;;
+28;LAURENT;Miguel;SPV;;CIS Bouillante;;2026-06-22;EXPIRE BIENTOT;Non;;;False;False;;
+29;LEGRAVE;Didier;SPV;;CIS Bouillante;;2026-01-13;NON A JOUR;Non;;;False;False;;
+30;LOISEAU;Fred;SPP;;CIS Bouillante;;2026-03-23;NON A JOUR;Non;;;False;False;;
+31;LUCE;Précilla;SPV;;CIS Bouillante;;2027-07-20;A JOUR;Non;;;False;False;;
+32;MACIN;Adriana;SPV;;CIS Bouillante;;2025-07-21;NON A JOUR;Non;;;False;True;;RDV pré-visite  30/06
+33;MICOLON;Jérome;SPV;;CIS Bouillante;;2025-07-31;NON A JOUR;Non;;;False;True;;RDV PREVISITE A PRENDRE
+34;MONTOUT;Sindy;SPV;;CIS Bouillante;;2025-10-30;NON A JOUR;Non;;;False;False;;
+35;PALMYRE;Dylan;SPV;;CIS Bouillante;;2026-01-13;NON A JOUR;Non;;;False;False;;
+36;RACON;Sonel;SPV;;CIS Bouillante;;2025-03-03;NON A JOUR;Non;;;False;True;;RDV pré-visite  à PRENDRE
+37;SAINT-JULIEN;Landry;SPV;;CIS Bouillante;;2025-07-31;NON A JOUR;Non;;;False;True;;RDV pré-visite  à PRENDRE
+38;SAINT-PHOR;Thierry;SPP;;CIS Bouillante;;2026-04-14;NON A JOUR;Non;;;False;False;;
