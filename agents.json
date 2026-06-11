@@ -1228,5 +1228,37 @@
     "document": "",
     "derniereMaj": "",
     "prioriteManuelle": ""
+  },
+  {
+    "nom": "JUDITH",
+    "prenom": "Benjamin",
+    "cis": "CIS BOUILLANTE",
+    "derniere_visite": "04/03/1987",
+    "type_visite": "Maintien en activité",
+    "avis_medical": "Apte avec restriction",
+    "aptitude": "Apte avec restriction",
+    "inaptitude": "Inapte",
+    "restriction": "Port ARI, Activités de nuit",
+    "activites_sportives": "Autorisées",
+    "prochaine_visite": "05/90/2048",
+    "date_validite": "05/90/2048",
+    "source_document": "JUDITH Benjamin.pdf",
+    "derniere_mise_a_jour": "11/06/2026 15:26",
+    "historique": [
+      {
+        "date_mise_a_jour": "11/06/2026 15:26",
+        "source": "JUDITH Benjamin.pdf",
+        "date_visite": "04/03/1987",
+        "date_validite": "05/90/2048",
+        "aptitude": "Apte avec restriction",
+        "inaptitude": "Inapte",
+        "restriction": "Port ARI, Activités de nuit",
+        "ancien_resume": {
+          "derniere_visite": null,
+          "prochaine_visite": null,
+          "aptitude": null
+        }
+      }
+    ]
   }
 ]
