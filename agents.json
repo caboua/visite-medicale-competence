@@ -1205,18 +1205,33 @@
     "prenom": "Thierry",
     "statut": "SPP",
     "prochaineVisite": "2026-04-14",
-    "aptitude": "NON A JOUR",
+    "aptitude": "Apte sans restriction",
     "observations": "",
     "bilanAFaire": false,
     "previsite": false,
     "grade": "",
-    "cis": "CIS Bouillante",
+    "cis": "Bouillante",
     "derniereVisite": "",
     "restriction": "",
     "telephone": "",
     "email": "",
-    "historique": [],
-    "matricule": "",
+    "historique": [
+      {
+        "date_mise_a_jour": "11/06/2026 22:46",
+        "source": "SAINT PHOR Thierry.pdf",
+        "date_visite": "21/05/2026",
+        "date_validite": "27/05/2027",
+        "aptitude": "Apte sans restriction",
+        "inaptitude": null,
+        "restriction": null,
+        "ancien_resume": {
+          "derniere_visite": null,
+          "prochaine_visite": null,
+          "aptitude": "NON A JOUR"
+        }
+      }
+    ],
+    "matricule": "21645",
     "typeVisite": "",
     "restrictionOperationnelle": "",
     "activitesSportives": "",
@@ -1225,9 +1240,16 @@
     "dateDebutInaptitude": "",
     "dateFinInaptitude": "",
     "source": "Base Excel",
-    "document": "",
+    "document": "SAINT PHOR Thierry.pdf",
     "derniereMaj": "",
-    "prioriteManuelle": ""
+    "prioriteManuelle": "",
+    "date_naissance": "22/02/1975",
+    "derniere_visite": "21/05/2026",
+    "type_visite": "Maintien en activite",
+    "activites_sportives": "Autorisées",
+    "prochaine_visite": "27/05/2027",
+    "date_validite": "27/05/2027",
+    "derniere_mise_a_jour": "11/06/2026 22:46"
   },
   {
     "nom": "JUDITH",
