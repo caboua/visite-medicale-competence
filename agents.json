@@ -1284,18 +1284,18 @@
   {
     "nom": "JUDITH",
     "prenom": "Benjamin",
-    "cis": "CIS BOUILLANTE",
-    "derniere_visite": "04/03/1987",
-    "type_visite": "Maintien en activité",
-    "avis_medical": "Apte avec restriction",
-    "aptitude": "Apte avec restriction",
-    "inaptitude": "Inapte",
-    "restriction": "Port ARI, Activités de nuit",
+    "cis": "Bouillante",
+    "derniere_visite": "2026-02-12",
+    "type_visite": "Maintien en activite",
+    "avis_medical": "Apte avec restriction operationnelle",
+    "aptitude": "Apte avec restriction operationnelle",
+    "inaptitude": "Non",
+    "restriction": "Port ARI",
     "activites_sportives": "Autorisées",
-    "prochaine_visite": "05/90/2048",
-    "date_validite": "05/90/2048",
+    "prochaine_visite": "2027-02-11",
+    "date_validite": "11/02/2027",
     "source_document": "JUDITH Benjamin.pdf",
-    "derniere_mise_a_jour": "11/06/2026 15:26",
+    "derniere_mise_a_jour": "2026-06-12",
     "historique": [
       {
         "date_mise_a_jour": "11/06/2026 15:26",
@@ -1310,7 +1310,27 @@
           "prochaine_visite": null,
           "aptitude": null
         }
+      },
+      {
+        "date": "2026-06-12",
+        "date_mise_a_jour": "12/06/2026 08:44",
+        "source": "PDF",
+        "typeVisite": "Maintien en activite",
+        "avis": "Apte avec restriction operationnelle",
+        "restriction": "Port ARI",
+        "prochaineVisite": "2027-02-11",
+        "document": "JUDITH Benjamin.pdf",
+        "ancien_resume": {
+          "derniereVisite": "04/03/1987",
+          "prochaineVisite": "05/90/2048",
+          "aptitude": "Apte avec restriction"
+        }
       }
-    ]
+    ],
+    "matricule": "22735",
+    "dateNaissance": "1987-03-04",
+    "restrictionOperationnelle": "Non",
+    "observations": "Certificat Bouillante retenu.\nApte avec restriction operationnelle.\nRestriction : Port ARI.\nActivités sportives : Autorisées.\nValable jusqu’au 11/02/2027.\nDernier fichier retenu : JUDITH Benjamin.pdf.",
+    "source": "PDF aptitude JUDITH Benjamin"
   }
 ]
