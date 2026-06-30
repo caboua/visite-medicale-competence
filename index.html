@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<meta name="referrer" content="no-referrer">
+<title>Aptitudes médicales — CIS Bouillante</title>
+<style>
+  :root{
+    --rouge:#c0392b; --rouge-fonce:#8e2a1f; --orange:#e67e22; --vert:#27ae60;
+    --gris:#7f8c8d; --bg:#f4f6f8; --card:#ffffff; --texte:#2c3e50; --bord:#e2e8f0;
+    --ombre:0 1px 3px rgba(0,0,0,.08),0 1px 2px rgba(0,0,0,.04);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:'Segoe UI',system-ui,-apple-system,sans-serif;background:var(--bg);color:var(--texte);line-height:1.45}
+
+  /* ----- Écran de verrouillage ----- */
+  #verrou{position:fixed;inset:0;background:linear-gradient(135deg,var(--rouge),var(--rouge-fonce));display:flex;align-items:center;justify-content:center;z-index:100;padding:20px}
+  #verrou .boite{background:#fff;border-radius:16px;padding:34px 30px;max-width:380px;width:100%;text-align:center;box-shadow:0 10px 40px rgba(0,0,0,.25)}
+  #verrou .emoji{font-size:46px}
+  #verrou h1{font-size:20px;margin:10px 0 4px}
+  #verrou p{font-size:13px;color:var(--gris);margin-bottom:18px}
+  #verrou input{width:100%;padding:12px 14px;border:1px solid var(--bord);border-radius:10px;font-size:16px;text-align:center;margin-bottom:12px}
+  #verrou input:focus{outline:2px solid var(--rouge);border-color:transparent}
+  #verrou button{width:100%;padding:12px;background:var(--rouge);color:#fff;border:none;border-radius:10px;font-size:15px;font-weight:700;cursor:pointer}
+  #verrou button:hover{background:var(--rouge-fonce)}
+  #verrou button:disabled{opacity:.6;cursor:wait}
+  #erreur{color:var(--rouge);font-size:13px;font-weight:600;min-height:18px;margin-top:4px}
+  #verrou .rgpd{font-size:11px;color:#aab2b8;margin-top:16px;line-height:1.4}
+
+  #app{display:none}
+  header{background:linear-gradient(135deg,var(--rouge),var(--rouge-fonce));color:#fff;padding:22px 28px;box-shadow:var(--ombre)}
+  header .titre{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+  header h1{font-size:22px;font-weight:700}
+  header .sous{opacity:.9;font-size:13px;margin-top:2px}
+  .badge-station{background:rgba(255,255,255,.18);padding:4px 12px;border-radius:20px;font-size:12px;font-weight:600;letter-spacing:.5px}
+  main{max-width:1180px;margin:0 auto;padding:24px 20px 60px}
+
+  .cartes{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:14px;margin-bottom:22px}
+  .carte{background:var(--card);border-radius:12px;padding:16px 18px;box-shadow:var(--ombre);border-left:5px solid var(--gris);cursor:pointer;transition:transform .12s,box-shadow .12s}
+  .carte:hover{transform:translateY(-2px);box-shadow:0 4px 12px rgba(0,0,0,.10)}
+  .carte.actif{outline:2px solid var(--texte);outline-offset:1px}
+  .carte .num{font-size:30px;font-weight:800;line-height:1}
+  .carte .lib{font-size:12.5px;color:var(--gris);margin-top:6px;text-transform:uppercase;letter-spacing:.4px;font-weight:600}
+  .carte.c-total{border-color:var(--texte)}
+  .carte.c-vert{border-color:var(--vert)} .carte.c-vert .num{color:var(--vert)}
+  .carte.c-orange{border-color:var(--orange)} .carte.c-orange .num{color:var(--orange)}
+  .carte.c-rouge{border-color:var(--rouge)} .carte.c-rouge .num{color:var(--rouge)}
+  .carte.c-gris .num{color:var(--gris)}
+
+  .barre{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-bottom:16px}
+  .barre input[type=search],.barre select{padding:9px 12px;border:1px solid var(--bord);border-radius:8px;font-size:14px;background:#fff;color:var(--texte)}
+  .barre input[type=search]{flex:1;min-width:200px}
+  .barre .spacer{flex:1}
+  button.act{padding:9px 14px;border:1px solid var(--bord);background:#fff;border-radius:8px;cursor:pointer;font-size:13px;font-weight:600;color:var(--texte)}
+  button.act:hover{background:#f0f2f5}
+
+  .tableau-wrap{background:var(--card);border-radius:12px;box-shadow:var(--ombre);overflow:hidden}
+  table{width:100%;border-collapse:collapse;font-size:14px}
+  thead th{background:#fafbfc;text-align:left;padding:11px 14px;font-size:12px;text-transform:uppercase;letter-spacing:.4px;color:var(--gris);border-bottom:2px solid var(--bord);cursor:pointer;user-select:none;white-space:nowrap}
+  thead th:hover{color:var(--texte)}
+  thead th .fle{font-size:10px;opacity:.5}
+  tbody td{padding:11px 14px;border-bottom:1px solid #eef1f4}
+  tbody tr:hover{background:#fafbfc}
+  tbody tr:last-child td{border-bottom:none}
+  .nom{font-weight:700}
+  .pt{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:8px;vertical-align:middle}
+  .pt.vert{background:var(--vert)} .pt.orange{background:var(--orange)} .pt.rouge{background:var(--rouge)} .pt.gris{background:var(--gris)}
+  .chip{display:inline-block;padding:3px 9px;border-radius:12px;font-size:11.5px;font-weight:700;white-space:nowrap}
+  .chip.vert{background:#e6f7ee;color:#1e8a4f} .chip.orange{background:#fdf0e3;color:#b5650f} .chip.rouge{background:#fbeae8;color:#a82c1f} .chip.gris{background:#eceff1;color:#5a6b73}
+  .chip.statut{background:#eef2f7;color:#46566b}
+  .resto{font-size:13px}
+  .resto.r{color:var(--rouge);font-weight:600}
+  .jours{font-size:12px;color:var(--gris)}
+  .vide{text-align:center;padding:40px;color:var(--gris)}
+  footer{text-align:center;color:var(--gris);font-size:12px;padding:18px}
+  .legende{display:flex;gap:16px;flex-wrap:wrap;font-size:12px;color:var(--gris);margin:14px 2px 0}
+  .legende span{display:inline-flex;align-items:center}
+  @media(max-width:640px){.col-hide{display:none}header h1{font-size:18px}}
+</style>
+</head>
+<body>
+
+<!-- ===== Écran de verrouillage ===== -->
+<div id="verrou">
+  <form class="boite" id="formVerrou">
+    <div class="emoji">🔒🚒</div>
+    <h1>Aptitudes médicales</h1>
+    <p>CIS BOUILLANTE — accès protégé</p>
+    <input type="password" id="phrase" placeholder="Phrase secrète" autocomplete="off" autofocus>
+    <button type="submit" id="btnDeverrouiller">Déverrouiller</button>
+    <div id="erreur"></div>
+    <div class="rgpd">Données de santé chiffrées (AES‑256). Réservé aux personnes autorisées du CIS. Toute consultation est soumise au secret professionnel.</div>
+  </form>
+</div>
+
+<!-- ===== Application ===== -->
+<div id="app">
+<header>
+  <div class="titre">
+    <span style="font-size:30px">🚒</span>
+    <div>
+      <h1>Aptitudes médicales</h1>
+      <div class="sous">Suivi des visites médicales et restrictions d'aptitude</div>
+    </div>
+    <span class="badge-station">CIS BOUILLANTE</span>
+    <div class="spacer" style="flex:1"></div>
+    <div style="text-align:right;font-size:12px;opacity:.9">
+      Prévisite valable 3 mois<br><span id="dateJour"></span>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="cartes" id="cartes"></div>
+
+  <div class="barre">
+    <input type="search" id="recherche" placeholder="🔎 Rechercher un nom, prénom, restriction…">
+    <select id="fStatut"><option value="">Tous statuts</option><option>SPV</option><option>SPP</option></select>
+    <select id="fSeuil">
+      <option value="90">Alerte à 90 jours</option>
+      <option value="60" selected>Alerte à 60 jours</option>
+      <option value="30">Alerte à 30 jours</option>
+    </select>
+    <div class="spacer"></div>
+    <button class="act" id="btnExport">⬇️ Exporter CSV</button>
+    <button class="act" id="btnVerrouiller">🔒 Verrouiller</button>
+  </div>
+
+  <div class="tableau-wrap">
+    <table>
+      <thead><tr>
+        <th data-tri="etat">Statut visite <span class="fle"></span></th>
+        <th data-tri="nom">Agent <span class="fle"></span></th>
+        <th class="col-hide" data-tri="statut">Grade <span class="fle"></span></th>
+        <th data-tri="date">Prochaine visite <span class="fle"></span></th>
+        <th data-tri="apt">Aptitude / restrictions <span class="fle"></span></th>
+      </tr></thead>
+      <tbody id="corps"></tbody>
+    </table>
+  </div>
+  <div class="legende">
+    <span><span class="pt vert"></span>&nbsp;À jour</span>
+    <span><span class="pt orange"></span>&nbsp;Visite à venir (selon seuil)</span>
+    <span><span class="pt rouge"></span>&nbsp;Non à jour (échéance dépassée)</span>
+    <span><span class="pt gris"></span>&nbsp;Date inconnue</span>
+  </div>
+
+  <footer>
+    Statut recalculé automatiquement à partir de la date du jour. Données chiffrées — usage strictement professionnel (RGPD).
+  </footer>
+</main>
+</div>
+
+<script>
+// ===== Bloc chiffré (AES-256-GCM, clé dérivée par PBKDF2) =====
+const ENC = {"v": 1, "kdf": "PBKDF2-SHA256", "iters": 250000, "salt": "4mXsZi5tX6f4724Kjml5KQ==", "iv": "+VqXBkUoazXNqhcP", "ct": "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"};
+
+let agents = [];
+let triCol = 'etat', triSens = 1, filtreCarte = '';
+const AUJ = (()=>{const d=new Date();d.setHours(0,0,0,0);return d;})();
+
+// ---------- Déchiffrement ----------
+const b64ToBytes = s => Uint8Array.from(atob(s), c=>c.charCodeAt(0));
+async function dechiffrer(phrase){
+  const km = await crypto.subtle.importKey('raw', new TextEncoder().encode(phrase), 'PBKDF2', false, ['deriveKey']);
+  const key = await crypto.subtle.deriveKey(
+    {name:'PBKDF2', salt:b64ToBytes(ENC.salt), iterations:ENC.iters, hash:'SHA-256'},
+    km, {name:'AES-GCM', length:256}, false, ['decrypt']);
+  const pt = await crypto.subtle.decrypt({name:'AES-GCM', iv:b64ToBytes(ENC.iv)}, key, b64ToBytes(ENC.ct));
+  return JSON.parse(new TextDecoder().decode(pt));
+}
+
+document.getElementById('formVerrou').addEventListener('submit', async e=>{
+  e.preventDefault();
+  const btn=document.getElementById('btnDeverrouiller'), err=document.getElementById('erreur');
+  const phrase=document.getElementById('phrase').value;
+  err.textContent=''; btn.disabled=true; btn.textContent='Déchiffrement…';
+  try{
+    agents = await dechiffrer(phrase);
+    document.getElementById('verrou').style.display='none';
+    document.getElementById('app').style.display='block';
+    demarrer();
+  }catch(ex){
+    err.textContent='Phrase secrète incorrecte.';
+    document.getElementById('phrase').value='';
+    document.getElementById('phrase').focus();
+  }finally{ btn.disabled=false; btn.textContent='Déverrouiller'; }
+});
+
+document.getElementById('btnVerrouiller')?.addEventListener('click', ()=>location.reload());
+
+// ---------- Dashboard ----------
+function parseDate(iso){ if(!iso) return null; const d=new Date(iso+'T00:00:00'); return isNaN(d)?null:d; }
+function joursRestants(d){ if(!d) return null; return Math.round((d-AUJ)/86400000); }
+function seuil(){ return parseInt(document.getElementById('fSeuil').value,10); }
+function etatAgent(a){
+  const d=parseDate(a.prochaineVisite); const j=joursRestants(d);
+  if(j===null) return {cle:'gris',rang:2,libelle:'Date inconnue',jours:null};
+  if(j<0) return {cle:'rouge',rang:0,libelle:'Non à jour',jours:j};
+  if(j<=seuil()) return {cle:'orange',rang:1,libelle:'À venir',jours:j};
+  return {cle:'vert',rang:3,libelle:'À jour',jours:j};
+}
+function aRestriction(a){ return a.aptitude && !/apte sans restriction/i.test(a.aptitude); }
+function calculStats(){
+  let s={total:agents.length,jour:0,venir:0,retard:0,restriction:0};
+  agents.forEach(a=>{const e=etatAgent(a);
+    if(e.cle==='vert')s.jour++; else if(e.cle==='orange')s.venir++; else if(e.cle==='rouge')s.retard++;
+    if(aRestriction(a))s.restriction++;});
+  return s;
+}
+function rendreCartes(){
+  const s=calculStats();
+  const defs=[
+    {f:'',cls:'c-total',n:s.total,l:'Agents au total'},
+    {f:'retard',cls:'c-rouge',n:s.retard,l:'Non à jour'},
+    {f:'venir',cls:'c-orange',n:s.venir,l:'Visites à venir'},
+    {f:'jour',cls:'c-vert',n:s.jour,l:'À jour'},
+    {f:'restriction',cls:'c-gris',n:s.restriction,l:'Avec restriction'},
+  ];
+  document.getElementById('cartes').innerHTML=defs.map(d=>
+    `<div class="carte ${d.cls} ${filtreCarte===d.f&&d.f!==''?'actif':''}" data-f="${d.f}">
+       <div class="num">${d.n}</div><div class="lib">${d.l}</div></div>`).join('');
+  document.querySelectorAll('.carte').forEach(c=>c.onclick=()=>{
+    const f=c.dataset.f; filtreCarte=(filtreCarte===f||f==='')?'':f; rendre();
+  });
+}
+function fmtDate(iso){ const d=parseDate(iso); return d?d.toLocaleDateString('fr-FR'):'—'; }
+function fmtJours(j){ if(j===null)return''; if(j<0)return`en retard de ${-j} j`; if(j===0)return"aujourd'hui"; return`dans ${j} j`; }
+function esc(s){ return String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c])); }
+function lignesFiltrees(){
+  const q=document.getElementById('recherche').value.trim().toLowerCase();
+  const fs=document.getElementById('fStatut').value;
+  let arr=agents.filter(a=>{
+    if(fs && a.statut!==fs) return false;
+    if(q){const t=(a.nom+' '+a.prenom+' '+a.aptitude+' '+a.statut).toLowerCase(); if(!t.includes(q))return false;}
+    const e=etatAgent(a);
+    if(filtreCarte==='jour'&&e.cle!=='vert')return false;
+    if(filtreCarte==='venir'&&e.cle!=='orange')return false;
+    if(filtreCarte==='retard'&&e.cle!=='rouge')return false;
+    if(filtreCarte==='restriction'&&!aRestriction(a))return false;
+    return true;
+  });
+  arr.sort((a,b)=>{
+    let va,vb; const ea=etatAgent(a),eb=etatAgent(b);
+    switch(triCol){
+      case 'nom': va=a.nom+a.prenom; vb=b.nom+b.prenom; break;
+      case 'statut': va=a.statut; vb=b.statut; break;
+      case 'date': va=parseDate(a.prochaineVisite)||new Date(8e15); vb=parseDate(b.prochaineVisite)||new Date(8e15); break;
+      case 'apt': va=(a.aptitude||'').toLowerCase(); vb=(b.aptitude||'').toLowerCase(); break;
+      default:
+        va=ea.rang*1e7+((parseDate(a.prochaineVisite)||new Date(8e15)).getTime()/1e6);
+        vb=eb.rang*1e7+((parseDate(b.prochaineVisite)||new Date(8e15)).getTime()/1e6);
+    }
+    if(va<vb)return -1*triSens; if(va>vb)return 1*triSens; return 0;
+  });
+  return arr;
+}
+function rendreTable(){
+  const arr=lignesFiltrees(), corps=document.getElementById('corps');
+  if(!arr.length){corps.innerHTML=`<tr><td colspan="5" class="vide">Aucun agent ne correspond.</td></tr>`;return;}
+  corps.innerHTML=arr.map(a=>{
+    const e=etatAgent(a), rest=aRestriction(a);
+    return `<tr>
+      <td><span class="pt ${e.cle}"></span><span class="chip ${e.cle}">${e.libelle}</span></td>
+      <td><span class="nom">${esc(a.nom)}</span> ${esc(a.prenom||'')}</td>
+      <td class="col-hide"><span class="chip statut">${esc(a.statut||'—')}</span></td>
+      <td>${fmtDate(a.prochaineVisite)}<div class="jours">${fmtJours(e.jours)}</div></td>
+      <td class="resto ${rest?'r':''}">${esc(a.aptitude||'—')}</td>
+    </tr>`;
+  }).join('');
+}
+function rendre(){ rendreCartes(); rendreTable(); }
+function majFleches(){
+  document.querySelectorAll('thead th').forEach(th=>{
+    th.querySelector('.fle').textContent = th.dataset.tri===triCol ? (triSens===1?'▲':'▼') : '';
+  });
+}
+function demarrer(){
+  document.getElementById('dateJour').textContent = AUJ.toLocaleDateString('fr-FR',{weekday:'long',day:'numeric',month:'long',year:'numeric'});
+  document.querySelectorAll('thead th').forEach(th=>{
+    th.onclick=()=>{const c=th.dataset.tri; if(triCol===c)triSens*=-1; else{triCol=c;triSens=1;} majFleches(); rendreTable();};
+  });
+  document.getElementById('recherche').oninput=rendre;
+  document.getElementById('fStatut').onchange=rendre;
+  document.getElementById('fSeuil').onchange=rendre;
+  document.getElementById('btnExport').onclick=()=>{
+    const ent=['Nom','Prénom','Grade','Prochaine visite','Statut visite','Jours','Aptitude'];
+    const lignes=lignesFiltrees().map(a=>{const e=etatAgent(a);
+      return [a.nom,a.prenom,a.statut,a.prochaineVisite||'',e.libelle,e.jours===null?'':e.jours,a.aptitude];});
+    const csv=[ent,...lignes].map(r=>r.map(c=>`"${String(c).replace(/"/g,'""')}"`).join(';')).join('\r\n');
+    const blob=new Blob(['﻿'+csv],{type:'text/csv;charset=utf-8'});
+    const u=URL.createObjectURL(blob), a=document.createElement('a');
+    a.href=u;a.download='aptitudes_cis_bouillante.csv';a.click();URL.revokeObjectURL(u);
+  };
+  majFleches();
+  rendre();
+}
+</script>
+</body>
+</html>
